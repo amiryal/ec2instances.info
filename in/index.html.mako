@@ -106,6 +106,8 @@
           <th class="vcpus">
             <abbr title="Each virtual CPU is a hyperthread of an Intel Xeon core for M3, C4, C3, R3, HS1, G2, I2, and D2">vCPUs</abbr>
           </th>
+          <th class="price-per-mem">Price per RAM</th>
+          <th class="price-per-vcpu">Price per vCPU</th>
           <th class="ecu-per-vcpu">ECU per vCPU</th>
           <th class="storage">Instance Storage</th>
           <th class="warmed-up">Instance Storage: already warmed-up</th>
@@ -146,6 +148,7 @@
         </tr>
       </thead>
       <tbody>
+<% price_unit = float(instances[0]['pricing']['us-east-1']['linux']['ondemand']) %>
 % for inst in instances:
         <tr class='instance' id="${inst['instance_type']}">
           <td class="name">${inst['pretty_name']}</td>
@@ -180,6 +183,20 @@
                 % endif
             </span>
           </td>
+          % if inst['pricing'].get('us-east-1', {}).get('linux', {}).get('reserved', 'N/A') != "N/A":
+            <% price_per_hour = float(inst['pricing']['us-east-1']['linux']['ondemand']) %>
+            <td class="price-per-mem">
+              <% mem_per_cost = price_per_hour / inst['memory'] / price_unit %>
+              <span sort="${mem_per_cost}">${"%.4g" % mem_per_cost}</span>
+            </td>
+            <td class="price-per-vcpu">
+              <% cpu_per_cost = price_per_hour / inst['vCPU'] / price_unit %>
+              <span sort="${cpu_per_cost}">${"%.4g" % cpu_per_cost}</span>
+            </td>
+          % else:
+            <td class="price-per-mem"> <span sort="0">Unknown</span> </td>
+            <td class="price-per-vcpu"> <span sort="0">Unknown</span> </td>
+          % endif
           <td class="ecu-per-vcpu">
             % if inst['ECU'] == 'variable':
             <span sort="0"><a href="http://aws.amazon.com/ec2/instance-types/#burst" target="_blank">Burstable</a></span>

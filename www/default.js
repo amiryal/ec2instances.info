@@ -30,6 +30,8 @@ function init_data_table() {
           "memory",
           "computeunits",
           "vcpus",
+          "price-per-mem",
+          "price-per-vcpu",
           "storage",
           "ebs-throughput",
           "ebs-iops",
