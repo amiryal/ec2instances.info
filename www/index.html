@@ -21,7 +21,7 @@
     <h1>EC2Instances.info <small>Easy Amazon EC2 Instance Comparison</small></h1>
     
 
-      <p class="pull-right label label-info">Last Update: 2017-03-10 15:45:20 UTC</p>
+      <p class="pull-right label label-info">Last Update: 2017-03-15 08:53:31 UTC</p>
       <ul class="nav nav-tabs">
         <li role="presentation" class="active"><a href="/">EC2</a></li>
         <li role="presentation" class=""><a href="/rds/">RDS</a></li>
@@ -133,6 +133,8 @@
           <th class="vcpus">
             <abbr title="Each virtual CPU is a hyperthread of an Intel Xeon core for M3, C4, C3, R3, HS1, G2, I2, and D2">vCPUs</abbr>
           </th>
+          <th class="price-per-mem">Price per RAM</th>
+          <th class="price-per-vcpu">Price per vCPU</th>
           <th class="ecu-per-vcpu">ECU per vCPU</th>
           <th class="storage">Instance Storage</th>
           <th class="warmed-up">Instance Storage: already warmed-up</th>
@@ -173,6 +175,7 @@
         </tr>
       </thead>
       <tbody>
+
         <tr class='instance' id="m1.small">
           <td class="name">M1 General Purpose Small</td>
           <td class="apiname">m1.small</td>
@@ -185,6 +188,15 @@
               1 vCPUs
             </span>
           </td>
+            
+            <td class="price-per-mem">
+              
+              <span sort="0.588235294118">0.5882</span>
+            </td>
+            <td class="price-per-vcpu">
+              
+              <span sort="1.0">1</span>
+            </td>
           <td class="ecu-per-vcpu">
             <span sort="1.0">1 units</span>
           </td>
@@ -298,6 +310,15 @@
               1 vCPUs
             </span>
           </td>
+            
+            <td class="price-per-mem">
+              
+              <span sort="0.527272727273">0.5273</span>
+            </td>
+            <td class="price-per-vcpu">
+              
+              <span sort="1.97727272727">1.977</span>
+            </td>
           <td class="ecu-per-vcpu">
             <span sort="2.0">2 units</span>
           </td>
@@ -411,6 +432,15 @@
               2 vCPUs
             </span>
           </td>
+            
+            <td class="price-per-mem">
+              
+              <span sort="0.530303030303">0.5303</span>
+            </td>
+            <td class="price-per-vcpu">
+              
+              <span sort="1.98863636364">1.989</span>
+            </td>
           <td class="ecu-per-vcpu">
             <span sort="2.0">2 units</span>
           </td>
@@ -438,18 +468,16 @@
             </span>
           </td>
           <td class="ebs-max-bandwidth">
-            <span sort="500.0">
-              500.0 Mbps  <!-- Not MB/s! -->
-            </span>
+            <span sort="0">N/A</span>
           </td>
           <td class="ebs-throughput">
-            <span sort="62.5">
-              62.5 MB/s
+            <span sort="0">
+              0 MB/s
             </span>
           </td>
           <td class="ebs-iops">
-            <span sort="4000.0">
-              4000.0 IOPS
+            <span sort="0">
+              0 IOPS
             </span>
           </td>
           <td class="maxips">
@@ -511,9 +539,7 @@
               </span>
           </td>
           <td class="cost-ebs-optimized" data-pricing='{&#34;us-east-1&#34;: &#34;0.025&#34;, &#34;ap-northeast-1&#34;: &#34;0.025&#34;, &#34;sa-east-1&#34;: &#34;0.025&#34;, &#34;ap-southeast-1&#34;: &#34;0.025&#34;, &#34;ap-southeast-2&#34;: &#34;0.025&#34;, &#34;us-west-2&#34;: &#34;0.025&#34;, &#34;us-gov-west-1&#34;: &#34;0.025&#34;, &#34;us-west-1&#34;: &#34;0.025&#34;, &#34;eu-west-1&#34;: &#34;0.025&#34;}'>
-                <span sort="0.025">
-                  $0.025 hourly
-                </span>
+              <span sort="0">N/A</span>
           </td>
         </tr>
         <tr class='instance' id="m1.xlarge">
@@ -528,6 +554,15 @@
               4 vCPUs
             </span>
           </td>
+            
+            <td class="price-per-mem">
+              
+              <span sort="0.530303030303">0.5303</span>
+            </td>
+            <td class="price-per-vcpu">
+              
+              <span sort="1.98863636364">1.989</span>
+            </td>
           <td class="ecu-per-vcpu">
             <span sort="2.0">2 units</span>
           </td>
@@ -555,18 +590,16 @@
             </span>
           </td>
           <td class="ebs-max-bandwidth">
-            <span sort="1000.0">
-              1000.0 Mbps  <!-- Not MB/s! -->
-            </span>
+            <span sort="0">N/A</span>
           </td>
           <td class="ebs-throughput">
-            <span sort="125.0">
-              125.0 MB/s
+            <span sort="0">
+              0 MB/s
             </span>
           </td>
           <td class="ebs-iops">
-            <span sort="8000.0">
-              8000.0 IOPS
+            <span sort="0">
+              0 IOPS
             </span>
           </td>
           <td class="maxips">
@@ -628,9 +661,7 @@
               </span>
           </td>
           <td class="cost-ebs-optimized" data-pricing='{&#34;us-east-1&#34;: &#34;0.05&#34;, &#34;ap-northeast-1&#34;: &#34;0.05&#34;, &#34;sa-east-1&#34;: &#34;0.05&#34;, &#34;ap-southeast-1&#34;: &#34;0.05&#34;, &#34;ap-southeast-2&#34;: &#34;0.05&#34;, &#34;us-west-2&#34;: &#34;0.05&#34;, &#34;us-gov-west-1&#34;: &#34;0.05&#34;, &#34;us-west-1&#34;: &#34;0.05&#34;, &#34;eu-west-1&#34;: &#34;0.05&#34;}'>
-                <span sort="0.05">
-                  $0.05 hourly
-                </span>
+              <span sort="0">N/A</span>
           </td>
         </tr>
         <tr class='instance' id="c1.medium">
@@ -645,6 +676,15 @@
               2 vCPUs
             </span>
           </td>
+            
+            <td class="price-per-mem">
+              
+              <span sort="1.73796791444">1.738</span>
+            </td>
+            <td class="price-per-vcpu">
+              
+              <span sort="1.47727272727">1.477</span>
+            </td>
           <td class="ecu-per-vcpu">
             <span sort="2.5">2.5 units</span>
           </td>
@@ -754,6 +794,15 @@
               8 vCPUs
             </span>
           </td>
+            
+            <td class="price-per-mem">
+              
+              <span sort="1.68831168831">1.688</span>
+            </td>
+            <td class="price-per-vcpu">
+              
+              <span sort="1.47727272727">1.477</span>
+            </td>
           <td class="ecu-per-vcpu">
             <span sort="2.5">2.5 units</span>
           </td>
@@ -781,18 +830,16 @@
             </span>
           </td>
           <td class="ebs-max-bandwidth">
-            <span sort="1000.0">
-              1000.0 Mbps  <!-- Not MB/s! -->
-            </span>
+            <span sort="0">N/A</span>
           </td>
           <td class="ebs-throughput">
-            <span sort="125.0">
-              125.0 MB/s
+            <span sort="0">
+              0 MB/s
             </span>
           </td>
           <td class="ebs-iops">
-            <span sort="8000.0">
-              8000.0 IOPS
+            <span sort="0">
+              0 IOPS
             </span>
           </td>
           <td class="maxips">
@@ -854,9 +901,7 @@
               </span>
           </td>
           <td class="cost-ebs-optimized" data-pricing='{&#34;us-east-1&#34;: &#34;0.05&#34;, &#34;ap-northeast-1&#34;: &#34;0.05&#34;, &#34;sa-east-1&#34;: &#34;0.05&#34;, &#34;ap-southeast-1&#34;: &#34;0.05&#34;, &#34;ap-southeast-2&#34;: &#34;0.05&#34;, &#34;us-west-2&#34;: &#34;0.05&#34;, &#34;us-gov-west-1&#34;: {}, &#34;us-west-1&#34;: &#34;0.05&#34;, &#34;eu-west-1&#34;: &#34;0.05&#34;}'>
-                <span sort="0.05">
-                  $0.05 hourly
-                </span>
+              <span sort="0">N/A</span>
           </td>
         </tr>
         <tr class='instance' id="cc2.8xlarge">
@@ -871,6 +916,15 @@
               32 vCPUs
             </span>
           </td>
+            
+            <td class="price-per-mem">
+              
+              <span sort="0.751314800902">0.7513</span>
+            </td>
+            <td class="price-per-vcpu">
+              
+              <span sort="1.42045454545">1.42</span>
+            </td>
           <td class="ecu-per-vcpu">
             <span sort="2.75">2.75 units</span>
           </td>
@@ -984,6 +1038,8 @@
               16 vCPUs
             </span>
           </td>
+            <td class="price-per-mem"> <span sort="0">Unknown</span> </td>
+            <td class="price-per-vcpu"> <span sort="0">Unknown</span> </td>
           <td class="ecu-per-vcpu">
             <span sort="2.09375">2.094 units</span>
           </td>
@@ -1089,6 +1145,15 @@
               2 vCPUs
             </span>
           </td>
+            
+            <td class="price-per-mem">
+              
+              <span sort="0.32562466773">0.3256</span>
+            </td>
+            <td class="price-per-vcpu">
+              
+              <span sort="2.78409090909">2.784</span>
+            </td>
           <td class="ecu-per-vcpu">
             <span sort="3.25">3.25 units</span>
           </td>
@@ -1202,6 +1267,15 @@
               4 vCPUs
             </span>
           </td>
+            
+            <td class="price-per-mem">
+              
+              <span sort="0.32562466773">0.3256</span>
+            </td>
+            <td class="price-per-vcpu">
+              
+              <span sort="2.78409090909">2.784</span>
+            </td>
           <td class="ecu-per-vcpu">
             <span sort="3.25">3.25 units</span>
           </td>
@@ -1229,18 +1303,16 @@
             </span>
           </td>
           <td class="ebs-max-bandwidth">
-            <span sort="500.0">
-              500.0 Mbps  <!-- Not MB/s! -->
-            </span>
+            <span sort="0">N/A</span>
           </td>
           <td class="ebs-throughput">
-            <span sort="62.5">
-              62.5 MB/s
+            <span sort="0">
+              0 MB/s
             </span>
           </td>
           <td class="ebs-iops">
-            <span sort="4000.0">
-              4000.0 IOPS
+            <span sort="0">
+              0 IOPS
             </span>
           </td>
           <td class="maxips">
@@ -1302,9 +1374,7 @@
               </span>
           </td>
           <td class="cost-ebs-optimized" data-pricing='{&#34;us-east-1&#34;: &#34;0.025&#34;, &#34;ap-northeast-1&#34;: &#34;0.025&#34;, &#34;sa-east-1&#34;: &#34;0.025&#34;, &#34;ap-southeast-1&#34;: &#34;0.025&#34;, &#34;ap-southeast-2&#34;: &#34;0.025&#34;, &#34;us-west-2&#34;: &#34;0.025&#34;, &#34;us-gov-west-1&#34;: &#34;0.025&#34;, &#34;us-west-1&#34;: &#34;0.025&#34;, &#34;eu-west-1&#34;: &#34;0.025&#34;}'>
-                <span sort="0.025">
-                  $0.025 hourly
-                </span>
+              <span sort="0">N/A</span>
           </td>
         </tr>
         <tr class='instance' id="m2.4xlarge">
@@ -1319,6 +1389,15 @@
               8 vCPUs
             </span>
           </td>
+            
+            <td class="price-per-mem">
+              
+              <span sort="0.32562466773">0.3256</span>
+            </td>
+            <td class="price-per-vcpu">
+              
+              <span sort="2.78409090909">2.784</span>
+            </td>
           <td class="ecu-per-vcpu">
             <span sort="3.25">3.25 units</span>
           </td>
@@ -1346,18 +1425,16 @@
             </span>
           </td>
           <td class="ebs-max-bandwidth">
-            <span sort="1000.0">
-              1000.0 Mbps  <!-- Not MB/s! -->
-            </span>
+            <span sort="0">N/A</span>
           </td>
           <td class="ebs-throughput">
-            <span sort="125.0">
-              125.0 MB/s
+            <span sort="0">
+              0 MB/s
             </span>
           </td>
           <td class="ebs-iops">
-            <span sort="8000.0">
-              8000.0 IOPS
+            <span sort="0">
+              0 IOPS
             </span>
           </td>
           <td class="maxips">
@@ -1419,9 +1496,7 @@
               </span>
           </td>
           <td class="cost-ebs-optimized" data-pricing='{&#34;us-east-1&#34;: &#34;0.05&#34;, &#34;ap-northeast-1&#34;: &#34;0.05&#34;, &#34;sa-east-1&#34;: &#34;0.05&#34;, &#34;ap-southeast-1&#34;: &#34;0.05&#34;, &#34;ap-southeast-2&#34;: &#34;0.05&#34;, &#34;us-west-2&#34;: &#34;0.05&#34;, &#34;us-gov-west-1&#34;: &#34;0.05&#34;, &#34;us-west-1&#34;: &#34;0.05&#34;, &#34;eu-west-1&#34;: &#34;0.05&#34;}'>
-                <span sort="0.05">
-                  $0.05 hourly
-                </span>
+              <span sort="0">N/A</span>
           </td>
         </tr>
         <tr class='instance' id="cr1.8xlarge">
@@ -1436,6 +1511,15 @@
               32 vCPUs
             </span>
           </td>
+            
+            <td class="price-per-mem">
+              
+              <span sort="0.326005961252">0.326</span>
+            </td>
+            <td class="price-per-vcpu">
+              
+              <span sort="2.48579545455">2.486</span>
+            </td>
           <td class="ecu-per-vcpu">
             <span sort="2.75">2.75 units</span>
           </td>
@@ -1549,6 +1633,15 @@
               4 vCPUs
             </span>
           </td>
+            
+            <td class="price-per-mem">
+              
+              <span sort="0.635618479881">0.6356</span>
+            </td>
+            <td class="price-per-vcpu">
+              
+              <span sort="4.84659090909">4.847</span>
+            </td>
           <td class="ecu-per-vcpu">
             <span sort="3.5">3.5 units</span>
           </td>
@@ -1576,18 +1669,16 @@
             </span>
           </td>
           <td class="ebs-max-bandwidth">
-            <span sort="500.0">
-              500.0 Mbps  <!-- Not MB/s! -->
-            </span>
+            <span sort="0">N/A</span>
           </td>
           <td class="ebs-throughput">
-            <span sort="62.5">
-              62.5 MB/s
+            <span sort="0">
+              0 MB/s
             </span>
           </td>
           <td class="ebs-iops">
-            <span sort="4000.0">
-              4000.0 IOPS
+            <span sort="0">
+              0 IOPS
             </span>
           </td>
           <td class="maxips">
@@ -1649,9 +1740,7 @@
               </span>
           </td>
           <td class="cost-ebs-optimized" data-pricing='{&#34;ap-south-1&#34;: &#34;0.02&#34;, &#34;us-east-1&#34;: &#34;0.02&#34;, &#34;ap-northeast-1&#34;: &#34;0.02&#34;, &#34;ap-northeast-2&#34;: &#34;0.02&#34;, &#34;ap-southeast-1&#34;: &#34;0.02&#34;, &#34;ap-southeast-2&#34;: &#34;0.02&#34;, &#34;us-west-2&#34;: &#34;0.02&#34;, &#34;us-gov-west-1&#34;: &#34;0.02&#34;, &#34;us-west-1&#34;: &#34;0.02&#34;, &#34;eu-central-1&#34;: &#34;0.02&#34;, &#34;eu-west-1&#34;: &#34;0.02&#34;, &#34;us-east-2&#34;: &#34;0.02&#34;}'>
-                <span sort="0.02">
-                  $0.02 hourly
-                </span>
+              <span sort="0">N/A</span>
           </td>
         </tr>
         <tr class='instance' id="i2.2xlarge">
@@ -1666,6 +1755,15 @@
               8 vCPUs
             </span>
           </td>
+            
+            <td class="price-per-mem">
+              
+              <span sort="0.635245901639">0.6352</span>
+            </td>
+            <td class="price-per-vcpu">
+              
+              <span sort="4.84375">4.844</span>
+            </td>
           <td class="ecu-per-vcpu">
             <span sort="3.375">3.375 units</span>
           </td>
@@ -1693,18 +1791,16 @@
             </span>
           </td>
           <td class="ebs-max-bandwidth">
-            <span sort="1000.0">
-              1000.0 Mbps  <!-- Not MB/s! -->
-            </span>
+            <span sort="0">N/A</span>
           </td>
           <td class="ebs-throughput">
-            <span sort="125.0">
-              125.0 MB/s
+            <span sort="0">
+              0 MB/s
             </span>
           </td>
           <td class="ebs-iops">
-            <span sort="8000.0">
-              8000.0 IOPS
+            <span sort="0">
+              0 IOPS
             </span>
           </td>
           <td class="maxips">
@@ -1766,9 +1862,7 @@
               </span>
           </td>
           <td class="cost-ebs-optimized" data-pricing='{&#34;ap-south-1&#34;: &#34;0.05&#34;, &#34;us-east-1&#34;: &#34;0.05&#34;, &#34;ap-northeast-1&#34;: &#34;0.05&#34;, &#34;ap-northeast-2&#34;: &#34;0.05&#34;, &#34;ap-southeast-1&#34;: &#34;0.05&#34;, &#34;ap-southeast-2&#34;: &#34;0.05&#34;, &#34;us-west-2&#34;: &#34;0.05&#34;, &#34;us-gov-west-1&#34;: &#34;0.05&#34;, &#34;us-west-1&#34;: &#34;0.05&#34;, &#34;eu-central-1&#34;: &#34;0.05&#34;, &#34;eu-west-1&#34;: &#34;0.05&#34;, &#34;us-east-2&#34;: &#34;0.05&#34;}'>
-                <span sort="0.05">
-                  $0.05 hourly
-                </span>
+              <span sort="0">N/A</span>
           </td>
         </tr>
         <tr class='instance' id="i2.4xlarge">
@@ -1783,6 +1877,15 @@
               16 vCPUs
             </span>
           </td>
+            
+            <td class="price-per-mem">
+              
+              <span sort="0.635245901639">0.6352</span>
+            </td>
+            <td class="price-per-vcpu">
+              
+              <span sort="4.84375">4.844</span>
+            </td>
           <td class="ecu-per-vcpu">
             <span sort="3.3125">3.312 units</span>
           </td>
@@ -1810,18 +1913,16 @@
             </span>
           </td>
           <td class="ebs-max-bandwidth">
-            <span sort="2000.0">
-              2000.0 Mbps  <!-- Not MB/s! -->
-            </span>
+            <span sort="0">N/A</span>
           </td>
           <td class="ebs-throughput">
-            <span sort="250.0">
-              250.0 MB/s
+            <span sort="0">
+              0 MB/s
             </span>
           </td>
           <td class="ebs-iops">
-            <span sort="16000.0">
-              16000.0 IOPS
+            <span sort="0">
+              0 IOPS
             </span>
           </td>
           <td class="maxips">
@@ -1883,9 +1984,7 @@
               </span>
           </td>
           <td class="cost-ebs-optimized" data-pricing='{&#34;ap-south-1&#34;: &#34;0.10&#34;, &#34;us-east-1&#34;: &#34;0.10&#34;, &#34;ap-northeast-1&#34;: &#34;0.10&#34;, &#34;ap-northeast-2&#34;: &#34;0.10&#34;, &#34;ap-southeast-1&#34;: &#34;0.10&#34;, &#34;ap-southeast-2&#34;: &#34;0.10&#34;, &#34;us-west-2&#34;: &#34;0.10&#34;, &#34;us-gov-west-1&#34;: &#34;0.10&#34;, &#34;us-west-1&#34;: &#34;0.10&#34;, &#34;eu-central-1&#34;: &#34;0.10&#34;, &#34;eu-west-1&#34;: &#34;0.10&#34;, &#34;us-east-2&#34;: &#34;0.10&#34;}'>
-                <span sort="0.10">
-                  $0.10 hourly
-                </span>
+              <span sort="0">N/A</span>
           </td>
         </tr>
         <tr class='instance' id="i2.8xlarge">
@@ -1900,6 +1999,15 @@
               32 vCPUs
             </span>
           </td>
+            
+            <td class="price-per-mem">
+              
+              <span sort="0.635245901639">0.6352</span>
+            </td>
+            <td class="price-per-vcpu">
+              
+              <span sort="4.84375">4.844</span>
+            </td>
           <td class="ecu-per-vcpu">
             <span sort="3.25">3.25 units</span>
           </td>
@@ -2013,6 +2121,15 @@
               16 vCPUs
             </span>
           </td>
+            
+            <td class="price-per-mem">
+              
+              <span sort="1.1645379414">1.165</span>
+            </td>
+            <td class="price-per-vcpu">
+              
+              <span sort="4.40340909091">4.403</span>
+            </td>
           <td class="ecu-per-vcpu">
             <span sort="2.1875">2.188 units</span>
           </td>
@@ -2126,6 +2243,15 @@
               16 vCPUs
             </span>
           </td>
+            
+            <td class="price-per-mem">
+              
+              <span sort="0.893550893551">0.8936</span>
+            </td>
+            <td class="price-per-vcpu">
+              
+              <span sort="6.53409090909">6.534</span>
+            </td>
           <td class="ecu-per-vcpu">
             <span sort="2.1875">2.188 units</span>
           </td>
@@ -2239,6 +2365,15 @@
               1 vCPUs
             </span>
           </td>
+            
+            <td class="price-per-mem">
+              
+              <span sort="0.741509713777">0.7415</span>
+            </td>
+            <td class="price-per-vcpu">
+              
+              <span sort="0.454545454545">0.4545</span>
+            </td>
           <td class="ecu-per-vcpu">
             <span sort="0"><a href="http://aws.amazon.com/ec2/instance-types/#burst" target="_blank">Burstable</a></span>
           </td>
@@ -2347,7 +2482,7 @@
           <td class="vcpus">
             <span sort="1">
               1 vCPUs
-                <abbr title="Given that a CPU Credit represents the performance of a full CPU core for one minute, the maximum credit balance is converted to CPU burst minutes per day by dividing it by the number of vCPUs.">
+                <abbr title="Given that a CPU Credit represents the performance of a full CPU core for one minute, the maximum credit balance of 72 is converted to CPU burst minutes per day by dividing it by the number of 1 vCPUs.">
                 <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/t2-instances.html" target="_blank">
                 for a
                 1h 12m
@@ -2355,6 +2490,15 @@
                 </a></abbr>
             </span>
           </td>
+            
+            <td class="price-per-mem">
+              
+              <span sort="0.268181818182">0.2682</span>
+            </td>
+            <td class="price-per-vcpu">
+              
+              <span sort="0.134090909091">0.1341</span>
+            </td>
           <td class="ecu-per-vcpu">
             <span sort="0"><a href="http://aws.amazon.com/ec2/instance-types/#burst" target="_blank">Burstable</a></span>
           </td>
@@ -2459,7 +2603,7 @@
           <td class="vcpus">
             <span sort="1">
               1 vCPUs
-                <abbr title="Given that a CPU Credit represents the performance of a full CPU core for one minute, the maximum credit balance is converted to CPU burst minutes per day by dividing it by the number of vCPUs.">
+                <abbr title="Given that a CPU Credit represents the performance of a full CPU core for one minute, the maximum credit balance of 144 is converted to CPU burst minutes per day by dividing it by the number of 1 vCPUs.">
                 <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/t2-instances.html" target="_blank">
                 for a
                 2h 24m
@@ -2467,6 +2611,15 @@
                 </a></abbr>
             </span>
           </td>
+            
+            <td class="price-per-mem">
+              
+              <span sort="0.272727272727">0.2727</span>
+            </td>
+            <td class="price-per-vcpu">
+              
+              <span sort="0.272727272727">0.2727</span>
+            </td>
           <td class="ecu-per-vcpu">
             <span sort="0"><a href="http://aws.amazon.com/ec2/instance-types/#burst" target="_blank">Burstable</a></span>
           </td>
@@ -2575,7 +2728,7 @@
           <td class="vcpus">
             <span sort="1">
               1 vCPUs
-                <abbr title="Given that a CPU Credit represents the performance of a full CPU core for one minute, the maximum credit balance is converted to CPU burst minutes per day by dividing it by the number of vCPUs.">
+                <abbr title="Given that a CPU Credit represents the performance of a full CPU core for one minute, the maximum credit balance of 288 is converted to CPU burst minutes per day by dividing it by the number of 1 vCPUs.">
                 <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/t2-instances.html" target="_blank">
                 for a
                 4h 48m
@@ -2583,6 +2736,15 @@
                 </a></abbr>
             </span>
           </td>
+            
+            <td class="price-per-mem">
+              
+              <span sort="0.261363636364">0.2614</span>
+            </td>
+            <td class="price-per-vcpu">
+              
+              <span sort="0.522727272727">0.5227</span>
+            </td>
           <td class="ecu-per-vcpu">
             <span sort="0"><a href="http://aws.amazon.com/ec2/instance-types/#burst" target="_blank">Burstable</a></span>
           </td>
@@ -2691,7 +2853,7 @@
           <td class="vcpus">
             <span sort="2">
               2 vCPUs
-                <abbr title="Given that a CPU Credit represents the performance of a full CPU core for one minute, the maximum credit balance is converted to CPU burst minutes per day by dividing it by the number of vCPUs.">
+                <abbr title="Given that a CPU Credit represents the performance of a full CPU core for one minute, the maximum credit balance of 576 is converted to CPU burst minutes per day by dividing it by the number of 2 vCPUs.">
                 <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/t2-instances.html" target="_blank">
                 for a
                 4h 48m
@@ -2699,6 +2861,15 @@
                 </a></abbr>
             </span>
           </td>
+            
+            <td class="price-per-mem">
+              
+              <span sort="0.267045454545">0.267</span>
+            </td>
+            <td class="price-per-vcpu">
+              
+              <span sort="0.534090909091">0.5341</span>
+            </td>
           <td class="ecu-per-vcpu">
             <span sort="0"><a href="http://aws.amazon.com/ec2/instance-types/#burst" target="_blank">Burstable</a></span>
           </td>
@@ -2807,7 +2978,7 @@
           <td class="vcpus">
             <span sort="2">
               2 vCPUs
-                <abbr title="Given that a CPU Credit represents the performance of a full CPU core for one minute, the maximum credit balance is converted to CPU burst minutes per day by dividing it by the number of vCPUs.">
+                <abbr title="Given that a CPU Credit represents the performance of a full CPU core for one minute, the maximum credit balance of 864 is converted to CPU burst minutes per day by dividing it by the number of 2 vCPUs.">
                 <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/t2-instances.html" target="_blank">
                 for a
                 7h 12m
@@ -2815,6 +2986,15 @@
                 </a></abbr>
             </span>
           </td>
+            
+            <td class="price-per-mem">
+              
+              <span sort="0.267045454545">0.267</span>
+            </td>
+            <td class="price-per-vcpu">
+              
+              <span sort="1.06818181818">1.068</span>
+            </td>
           <td class="ecu-per-vcpu">
             <span sort="0"><a href="http://aws.amazon.com/ec2/instance-types/#burst" target="_blank">Burstable</a></span>
           </td>
@@ -2923,7 +3103,7 @@
           <td class="vcpus">
             <span sort="4">
               4 vCPUs
-                <abbr title="Given that a CPU Credit represents the performance of a full CPU core for one minute, the maximum credit balance is converted to CPU burst minutes per day by dividing it by the number of vCPUs.">
+                <abbr title="Given that a CPU Credit represents the performance of a full CPU core for one minute, the maximum credit balance of 1296 is converted to CPU burst minutes per day by dividing it by the number of 4 vCPUs.">
                 <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/t2-instances.html" target="_blank">
                 for a
                 5h 24m
@@ -2931,6 +3111,15 @@
                 </a></abbr>
             </span>
           </td>
+            
+            <td class="price-per-mem">
+              
+              <span sort="0.267045454545">0.267</span>
+            </td>
+            <td class="price-per-vcpu">
+              
+              <span sort="1.06818181818">1.068</span>
+            </td>
           <td class="ecu-per-vcpu">
             <span sort="0"><a href="http://aws.amazon.com/ec2/instance-types/#burst" target="_blank">Burstable</a></span>
           </td>
@@ -3039,7 +3228,7 @@
           <td class="vcpus">
             <span sort="8">
               8 vCPUs
-                <abbr title="Given that a CPU Credit represents the performance of a full CPU core for one minute, the maximum credit balance is converted to CPU burst minutes per day by dividing it by the number of vCPUs.">
+                <abbr title="Given that a CPU Credit represents the performance of a full CPU core for one minute, the maximum credit balance of 1944 is converted to CPU burst minutes per day by dividing it by the number of 8 vCPUs.">
                 <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/t2-instances.html" target="_blank">
                 for a
                 4h 3m
@@ -3047,6 +3236,15 @@
                 </a></abbr>
             </span>
           </td>
+            
+            <td class="price-per-mem">
+              
+              <span sort="0.267045454545">0.267</span>
+            </td>
+            <td class="price-per-vcpu">
+              
+              <span sort="1.06818181818">1.068</span>
+            </td>
           <td class="ecu-per-vcpu">
             <span sort="0"><a href="http://aws.amazon.com/ec2/instance-types/#burst" target="_blank">Burstable</a></span>
           </td>
@@ -3152,6 +3350,15 @@
               2 vCPUs
             </span>
           </td>
+            
+            <td class="price-per-mem">
+              
+              <span sort="0.306818181818">0.3068</span>
+            </td>
+            <td class="price-per-vcpu">
+              
+              <span sort="1.22727272727">1.227</span>
+            </td>
           <td class="ecu-per-vcpu">
             <span sort="3.25">3.25 units</span>
           </td>
@@ -3175,18 +3382,16 @@
             </span>
           </td>
           <td class="ebs-max-bandwidth">
-            <span sort="450.0">
-              450.0 Mbps  <!-- Not MB/s! -->
-            </span>
+            <span sort="0">N/A</span>
           </td>
           <td class="ebs-throughput">
-            <span sort="56.25">
-              56.25 MB/s
+            <span sort="0">
+              0 MB/s
             </span>
           </td>
           <td class="ebs-iops">
-            <span sort="3600.0">
-              3600.0 IOPS
+            <span sort="0">
+              0 IOPS
             </span>
           </td>
           <td class="maxips">
@@ -3248,9 +3453,7 @@
               </span>
           </td>
           <td class="cost-ebs-optimized" data-pricing='{&#34;ap-south-1&#34;: &#34;0.00&#34;, &#34;us-east-1&#34;: &#34;0.00&#34;, &#34;ap-northeast-1&#34;: &#34;0.00&#34;, &#34;ap-southeast-2&#34;: &#34;0.00&#34;, &#34;eu-west-1&#34;: &#34;0.00&#34;, &#34;ap-southeast-1&#34;: &#34;0.00&#34;, &#34;eu-west-2&#34;: &#34;0.00&#34;, &#34;ca-central-1&#34;: &#34;0.00&#34;, &#34;ap-northeast-2&#34;: &#34;0.00&#34;, &#34;us-west-2&#34;: &#34;0.00&#34;, &#34;us-gov-west-1&#34;: {}, &#34;us-west-1&#34;: &#34;0.00&#34;, &#34;eu-central-1&#34;: &#34;0.00&#34;, &#34;sa-east-1&#34;: &#34;0.00&#34;, &#34;us-east-2&#34;: &#34;0.00&#34;}'>
-                <span sort="0.00">
-                  $0.00 hourly
-                </span>
+              <span sort="0">N/A</span>
           </td>
         </tr>
         <tr class='instance' id="m4.xlarge">
@@ -3265,6 +3468,15 @@
               4 vCPUs
             </span>
           </td>
+            
+            <td class="price-per-mem">
+              
+              <span sort="0.305397727273">0.3054</span>
+            </td>
+            <td class="price-per-vcpu">
+              
+              <span sort="1.22159090909">1.222</span>
+            </td>
           <td class="ecu-per-vcpu">
             <span sort="3.25">3.25 units</span>
           </td>
@@ -3288,18 +3500,16 @@
             </span>
           </td>
           <td class="ebs-max-bandwidth">
-            <span sort="750.0">
-              750.0 Mbps  <!-- Not MB/s! -->
-            </span>
+            <span sort="0">N/A</span>
           </td>
           <td class="ebs-throughput">
-            <span sort="93.75">
-              93.75 MB/s
+            <span sort="0">
+              0 MB/s
             </span>
           </td>
           <td class="ebs-iops">
-            <span sort="6000.0">
-              6000.0 IOPS
+            <span sort="0">
+              0 IOPS
             </span>
           </td>
           <td class="maxips">
@@ -3361,9 +3571,7 @@
               </span>
           </td>
           <td class="cost-ebs-optimized" data-pricing='{&#34;ap-south-1&#34;: &#34;0.00&#34;, &#34;us-east-1&#34;: &#34;0.00&#34;, &#34;ap-northeast-1&#34;: &#34;0.00&#34;, &#34;ap-southeast-2&#34;: &#34;0.00&#34;, &#34;eu-west-1&#34;: &#34;0.00&#34;, &#34;ap-southeast-1&#34;: &#34;0.00&#34;, &#34;eu-west-2&#34;: &#34;0.00&#34;, &#34;ca-central-1&#34;: &#34;0.00&#34;, &#34;ap-northeast-2&#34;: &#34;0.00&#34;, &#34;us-west-2&#34;: &#34;0.00&#34;, &#34;us-gov-west-1&#34;: {}, &#34;us-west-1&#34;: &#34;0.00&#34;, &#34;eu-central-1&#34;: &#34;0.00&#34;, &#34;sa-east-1&#34;: &#34;0.00&#34;, &#34;us-east-2&#34;: &#34;0.00&#34;}'>
-                <span sort="0.00">
-                  $0.00 hourly
-                </span>
+              <span sort="0">N/A</span>
           </td>
         </tr>
         <tr class='instance' id="m4.2xlarge">
@@ -3378,6 +3586,15 @@
               8 vCPUs
             </span>
           </td>
+            
+            <td class="price-per-mem">
+              
+              <span sort="0.306107954545">0.3061</span>
+            </td>
+            <td class="price-per-vcpu">
+              
+              <span sort="1.22443181818">1.224</span>
+            </td>
           <td class="ecu-per-vcpu">
             <span sort="3.25">3.25 units</span>
           </td>
@@ -3401,18 +3618,16 @@
             </span>
           </td>
           <td class="ebs-max-bandwidth">
-            <span sort="1000.0">
-              1000.0 Mbps  <!-- Not MB/s! -->
-            </span>
+            <span sort="0">N/A</span>
           </td>
           <td class="ebs-throughput">
-            <span sort="125.0">
-              125.0 MB/s
+            <span sort="0">
+              0 MB/s
             </span>
           </td>
           <td class="ebs-iops">
-            <span sort="8000.0">
-              8000.0 IOPS
+            <span sort="0">
+              0 IOPS
             </span>
           </td>
           <td class="maxips">
@@ -3474,9 +3689,7 @@
               </span>
           </td>
           <td class="cost-ebs-optimized" data-pricing='{&#34;ap-south-1&#34;: &#34;0.00&#34;, &#34;us-east-1&#34;: &#34;0.00&#34;, &#34;ap-northeast-1&#34;: &#34;0.00&#34;, &#34;ap-southeast-2&#34;: &#34;0.00&#34;, &#34;eu-west-1&#34;: &#34;0.00&#34;, &#34;ap-southeast-1&#34;: &#34;0.00&#34;, &#34;eu-west-2&#34;: &#34;0.00&#34;, &#34;ca-central-1&#34;: &#34;0.00&#34;, &#34;ap-northeast-2&#34;: &#34;0.00&#34;, &#34;us-west-2&#34;: &#34;0.00&#34;, &#34;us-gov-west-1&#34;: {}, &#34;us-west-1&#34;: &#34;0.00&#34;, &#34;eu-central-1&#34;: &#34;0.00&#34;, &#34;sa-east-1&#34;: &#34;0.00&#34;, &#34;us-east-2&#34;: &#34;0.00&#34;}'>
-                <span sort="0.00">
-                  $0.00 hourly
-                </span>
+              <span sort="0">N/A</span>
           </td>
         </tr>
         <tr class='instance' id="m4.4xlarge">
@@ -3491,6 +3704,15 @@
               16 vCPUs
             </span>
           </td>
+            
+            <td class="price-per-mem">
+              
+              <span sort="0.306107954545">0.3061</span>
+            </td>
+            <td class="price-per-vcpu">
+              
+              <span sort="1.22443181818">1.224</span>
+            </td>
           <td class="ecu-per-vcpu">
             <span sort="3.34375">3.344 units</span>
           </td>
@@ -3514,18 +3736,16 @@
             </span>
           </td>
           <td class="ebs-max-bandwidth">
-            <span sort="2000.0">
-              2000.0 Mbps  <!-- Not MB/s! -->
-            </span>
+            <span sort="0">N/A</span>
           </td>
           <td class="ebs-throughput">
-            <span sort="250.0">
-              250.0 MB/s
+            <span sort="0">
+              0 MB/s
             </span>
           </td>
           <td class="ebs-iops">
-            <span sort="16000.0">
-              16000.0 IOPS
+            <span sort="0">
+              0 IOPS
             </span>
           </td>
           <td class="maxips">
@@ -3587,9 +3807,7 @@
               </span>
           </td>
           <td class="cost-ebs-optimized" data-pricing='{&#34;ap-south-1&#34;: &#34;0.00&#34;, &#34;us-east-1&#34;: &#34;0.00&#34;, &#34;ap-northeast-1&#34;: &#34;0.00&#34;, &#34;ap-southeast-2&#34;: &#34;0.00&#34;, &#34;eu-west-1&#34;: &#34;0.00&#34;, &#34;ap-southeast-1&#34;: &#34;0.00&#34;, &#34;eu-west-2&#34;: &#34;0.00&#34;, &#34;ca-central-1&#34;: &#34;0.00&#34;, &#34;ap-northeast-2&#34;: &#34;0.00&#34;, &#34;us-west-2&#34;: &#34;0.00&#34;, &#34;us-gov-west-1&#34;: {}, &#34;us-west-1&#34;: &#34;0.00&#34;, &#34;eu-central-1&#34;: &#34;0.00&#34;, &#34;sa-east-1&#34;: &#34;0.00&#34;, &#34;us-east-2&#34;: &#34;0.00&#34;}'>
-                <span sort="0.00">
-                  $0.00 hourly
-                </span>
+              <span sort="0">N/A</span>
           </td>
         </tr>
         <tr class='instance' id="m4.10xlarge">
@@ -3604,6 +3822,15 @@
               40 vCPUs
             </span>
           </td>
+            
+            <td class="price-per-mem">
+              
+              <span sort="0.306107954545">0.3061</span>
+            </td>
+            <td class="price-per-vcpu">
+              
+              <span sort="1.22443181818">1.224</span>
+            </td>
           <td class="ecu-per-vcpu">
             <span sort="3.1125">3.112 units</span>
           </td>
@@ -3627,18 +3854,16 @@
             </span>
           </td>
           <td class="ebs-max-bandwidth">
-            <span sort="4000.0">
-              4000.0 Mbps  <!-- Not MB/s! -->
-            </span>
+            <span sort="0">N/A</span>
           </td>
           <td class="ebs-throughput">
-            <span sort="500.0">
-              500.0 MB/s
+            <span sort="0">
+              0 MB/s
             </span>
           </td>
           <td class="ebs-iops">
-            <span sort="32000.0">
-              32000.0 IOPS
+            <span sort="0">
+              0 IOPS
             </span>
           </td>
           <td class="maxips">
@@ -3700,9 +3925,7 @@
               </span>
           </td>
           <td class="cost-ebs-optimized" data-pricing='{&#34;ap-south-1&#34;: &#34;0.00&#34;, &#34;us-east-1&#34;: &#34;0.00&#34;, &#34;ap-northeast-1&#34;: &#34;0.00&#34;, &#34;ap-southeast-2&#34;: &#34;0.00&#34;, &#34;eu-west-1&#34;: &#34;0.00&#34;, &#34;ap-southeast-1&#34;: &#34;0.00&#34;, &#34;eu-west-2&#34;: &#34;0.00&#34;, &#34;ca-central-1&#34;: &#34;0.00&#34;, &#34;ap-northeast-2&#34;: &#34;0.00&#34;, &#34;us-west-2&#34;: &#34;0.00&#34;, &#34;us-gov-west-1&#34;: {}, &#34;us-west-1&#34;: &#34;0.00&#34;, &#34;eu-central-1&#34;: &#34;0.00&#34;, &#34;sa-east-1&#34;: &#34;0.00&#34;, &#34;us-east-2&#34;: &#34;0.00&#34;}'>
-                <span sort="0.00">
-                  $0.00 hourly
-                </span>
+              <span sort="0">N/A</span>
           </td>
         </tr>
         <tr class='instance' id="m4.16xlarge">
@@ -3717,6 +3940,15 @@
               64 vCPUs
             </span>
           </td>
+            
+            <td class="price-per-mem">
+              
+              <span sort="0.306019176136">0.306</span>
+            </td>
+            <td class="price-per-vcpu">
+              
+              <span sort="1.22407670455">1.224</span>
+            </td>
           <td class="ecu-per-vcpu">
             <span sort="2.9375">2.938 units</span>
           </td>
@@ -3740,18 +3972,16 @@
             </span>
           </td>
           <td class="ebs-max-bandwidth">
-            <span sort="10000.0">
-              10000.0 Mbps  <!-- Not MB/s! -->
-            </span>
+            <span sort="0">N/A</span>
           </td>
           <td class="ebs-throughput">
-            <span sort="1250.0">
-              1250.0 MB/s
+            <span sort="0">
+              0 MB/s
             </span>
           </td>
           <td class="ebs-iops">
-            <span sort="65000.0">
-              65000.0 IOPS
+            <span sort="0">
+              0 IOPS
             </span>
           </td>
           <td class="maxips">
@@ -3813,7 +4043,7 @@
               </span>
           </td>
           <td class="cost-ebs-optimized" data-pricing='{&#34;ap-south-1&#34;: {}, &#34;us-east-1&#34;: {}, &#34;ap-northeast-1&#34;: {}, &#34;ap-southeast-2&#34;: {}, &#34;eu-west-1&#34;: {}, &#34;ap-southeast-1&#34;: {}, &#34;eu-west-2&#34;: &#34;0.00&#34;, &#34;ca-central-1&#34;: &#34;0.00&#34;, &#34;ap-northeast-2&#34;: {}, &#34;us-west-2&#34;: {}, &#34;us-gov-west-1&#34;: {}, &#34;us-west-1&#34;: {}, &#34;eu-central-1&#34;: {}, &#34;sa-east-1&#34;: {}, &#34;us-east-2&#34;: &#34;0.00&#34;}'>
-                <span sort="0">0</span>
+              <span sort="0">N/A</span>
           </td>
         </tr>
         <tr class='instance' id="m3.medium">
@@ -3828,6 +4058,15 @@
               1 vCPUs
             </span>
           </td>
+            
+            <td class="price-per-mem">
+              
+              <span sort="0.406060606061">0.4061</span>
+            </td>
+            <td class="price-per-vcpu">
+              
+              <span sort="1.52272727273">1.523</span>
+            </td>
           <td class="ecu-per-vcpu">
             <span sort="3.0">3 units</span>
           </td>
@@ -3941,6 +4180,15 @@
               2 vCPUs
             </span>
           </td>
+            
+            <td class="price-per-mem">
+              
+              <span sort="0.40303030303">0.403</span>
+            </td>
+            <td class="price-per-vcpu">
+              
+              <span sort="1.51136363636">1.511</span>
+            </td>
           <td class="ecu-per-vcpu">
             <span sort="3.25">3.25 units</span>
           </td>
@@ -4054,6 +4302,15 @@
               4 vCPUs
             </span>
           </td>
+            
+            <td class="price-per-mem">
+              
+              <span sort="0.40303030303">0.403</span>
+            </td>
+            <td class="price-per-vcpu">
+              
+              <span sort="1.51136363636">1.511</span>
+            </td>
           <td class="ecu-per-vcpu">
             <span sort="3.25">3.25 units</span>
           </td>
@@ -4081,18 +4338,16 @@
             </span>
           </td>
           <td class="ebs-max-bandwidth">
-            <span sort="500.0">
-              500.0 Mbps  <!-- Not MB/s! -->
-            </span>
+            <span sort="0">N/A</span>
           </td>
           <td class="ebs-throughput">
-            <span sort="62.5">
-              62.5 MB/s
+            <span sort="0">
+              0 MB/s
             </span>
           </td>
           <td class="ebs-iops">
-            <span sort="4000.0">
-              4000.0 IOPS
+            <span sort="0">
+              0 IOPS
             </span>
           </td>
           <td class="maxips">
@@ -4154,9 +4409,7 @@
               </span>
           </td>
           <td class="cost-ebs-optimized" data-pricing='{&#34;us-east-1&#34;: &#34;0.025&#34;, &#34;ap-northeast-1&#34;: &#34;0.025&#34;, &#34;eu-west-1&#34;: &#34;0.025&#34;, &#34;ap-northeast-2&#34;: &#34;0.025&#34;, &#34;ap-southeast-1&#34;: &#34;0.025&#34;, &#34;ap-southeast-2&#34;: &#34;0.025&#34;, &#34;us-west-2&#34;: &#34;0.025&#34;, &#34;us-gov-west-1&#34;: &#34;0.025&#34;, &#34;us-west-1&#34;: &#34;0.025&#34;, &#34;eu-central-1&#34;: &#34;0.025&#34;, &#34;sa-east-1&#34;: &#34;0.025&#34;}'>
-                <span sort="0.025">
-                  $0.025 hourly
-                </span>
+              <span sort="0">N/A</span>
           </td>
         </tr>
         <tr class='instance' id="m3.2xlarge">
@@ -4171,6 +4424,15 @@
               8 vCPUs
             </span>
           </td>
+            
+            <td class="price-per-mem">
+              
+              <span sort="0.40303030303">0.403</span>
+            </td>
+            <td class="price-per-vcpu">
+              
+              <span sort="1.51136363636">1.511</span>
+            </td>
           <td class="ecu-per-vcpu">
             <span sort="3.25">3.25 units</span>
           </td>
@@ -4198,18 +4460,16 @@
             </span>
           </td>
           <td class="ebs-max-bandwidth">
-            <span sort="1000.0">
-              1000.0 Mbps  <!-- Not MB/s! -->
-            </span>
+            <span sort="0">N/A</span>
           </td>
           <td class="ebs-throughput">
-            <span sort="125.0">
-              125.0 MB/s
+            <span sort="0">
+              0 MB/s
             </span>
           </td>
           <td class="ebs-iops">
-            <span sort="8000.0">
-              8000.0 IOPS
+            <span sort="0">
+              0 IOPS
             </span>
           </td>
           <td class="maxips">
@@ -4271,9 +4531,7 @@
               </span>
           </td>
           <td class="cost-ebs-optimized" data-pricing='{&#34;us-east-1&#34;: &#34;0.05&#34;, &#34;ap-northeast-1&#34;: &#34;0.05&#34;, &#34;eu-west-1&#34;: &#34;0.05&#34;, &#34;ap-northeast-2&#34;: &#34;0.05&#34;, &#34;ap-southeast-1&#34;: &#34;0.05&#34;, &#34;ap-southeast-2&#34;: &#34;0.05&#34;, &#34;us-west-2&#34;: &#34;0.05&#34;, &#34;us-gov-west-1&#34;: &#34;0.05&#34;, &#34;us-west-1&#34;: &#34;0.05&#34;, &#34;eu-central-1&#34;: &#34;0.05&#34;, &#34;sa-east-1&#34;: &#34;0.05&#34;}'>
-                <span sort="0.05">
-                  $0.05 hourly
-                </span>
+              <span sort="0">N/A</span>
           </td>
         </tr>
         <tr class='instance' id="c4.large">
@@ -4288,6 +4546,15 @@
               2 vCPUs
             </span>
           </td>
+            
+            <td class="price-per-mem">
+              
+              <span sort="0.606060606061">0.6061</span>
+            </td>
+            <td class="price-per-vcpu">
+              
+              <span sort="1.13636363636">1.136</span>
+            </td>
           <td class="ecu-per-vcpu">
             <span sort="4.0">4 units</span>
           </td>
@@ -4311,18 +4578,16 @@
             </span>
           </td>
           <td class="ebs-max-bandwidth">
-            <span sort="500.0">
-              500.0 Mbps  <!-- Not MB/s! -->
-            </span>
+            <span sort="0">N/A</span>
           </td>
           <td class="ebs-throughput">
-            <span sort="62.5">
-              62.5 MB/s
+            <span sort="0">
+              0 MB/s
             </span>
           </td>
           <td class="ebs-iops">
-            <span sort="4000.0">
-              4000.0 IOPS
+            <span sort="0">
+              0 IOPS
             </span>
           </td>
           <td class="maxips">
@@ -4384,9 +4649,7 @@
               </span>
           </td>
           <td class="cost-ebs-optimized" data-pricing='{&#34;ap-south-1&#34;: &#34;0.00&#34;, &#34;us-east-1&#34;: &#34;0.00&#34;, &#34;ap-northeast-1&#34;: &#34;0.00&#34;, &#34;ap-southeast-2&#34;: &#34;0.00&#34;, &#34;eu-west-1&#34;: &#34;0.00&#34;, &#34;ap-southeast-1&#34;: &#34;0.00&#34;, &#34;eu-west-2&#34;: &#34;0.00&#34;, &#34;ca-central-1&#34;: &#34;0.00&#34;, &#34;ap-northeast-2&#34;: &#34;0.00&#34;, &#34;us-west-2&#34;: &#34;0.00&#34;, &#34;us-gov-west-1&#34;: {}, &#34;us-west-1&#34;: &#34;0.00&#34;, &#34;eu-central-1&#34;: &#34;0.00&#34;, &#34;sa-east-1&#34;: &#34;0.00&#34;, &#34;us-east-2&#34;: &#34;0.00&#34;}'>
-                <span sort="0.00">
-                  $0.00 hourly
-                </span>
+              <span sort="0">N/A</span>
           </td>
         </tr>
         <tr class='instance' id="c4.xlarge">
@@ -4401,6 +4664,15 @@
               4 vCPUs
             </span>
           </td>
+            
+            <td class="price-per-mem">
+              
+              <span sort="0.60303030303">0.603</span>
+            </td>
+            <td class="price-per-vcpu">
+              
+              <span sort="1.13068181818">1.131</span>
+            </td>
           <td class="ecu-per-vcpu">
             <span sort="4.0">4 units</span>
           </td>
@@ -4424,18 +4696,16 @@
             </span>
           </td>
           <td class="ebs-max-bandwidth">
-            <span sort="750.0">
-              750.0 Mbps  <!-- Not MB/s! -->
-            </span>
+            <span sort="0">N/A</span>
           </td>
           <td class="ebs-throughput">
-            <span sort="93.75">
-              93.75 MB/s
+            <span sort="0">
+              0 MB/s
             </span>
           </td>
           <td class="ebs-iops">
-            <span sort="6000.0">
-              6000.0 IOPS
+            <span sort="0">
+              0 IOPS
             </span>
           </td>
           <td class="maxips">
@@ -4497,9 +4767,7 @@
               </span>
           </td>
           <td class="cost-ebs-optimized" data-pricing='{&#34;ap-south-1&#34;: &#34;0.00&#34;, &#34;us-east-1&#34;: &#34;0.00&#34;, &#34;ap-northeast-1&#34;: &#34;0.00&#34;, &#34;ap-southeast-2&#34;: &#34;0.00&#34;, &#34;eu-west-1&#34;: &#34;0.00&#34;, &#34;ap-southeast-1&#34;: &#34;0.00&#34;, &#34;eu-west-2&#34;: &#34;0.00&#34;, &#34;ca-central-1&#34;: &#34;0.00&#34;, &#34;ap-northeast-2&#34;: &#34;0.00&#34;, &#34;us-west-2&#34;: &#34;0.00&#34;, &#34;us-gov-west-1&#34;: {}, &#34;us-west-1&#34;: &#34;0.00&#34;, &#34;eu-central-1&#34;: &#34;0.00&#34;, &#34;sa-east-1&#34;: &#34;0.00&#34;, &#34;us-east-2&#34;: &#34;0.00&#34;}'>
-                <span sort="0.00">
-                  $0.00 hourly
-                </span>
+              <span sort="0">N/A</span>
           </td>
         </tr>
         <tr class='instance' id="c4.2xlarge">
@@ -4514,6 +4782,15 @@
               8 vCPUs
             </span>
           </td>
+            
+            <td class="price-per-mem">
+              
+              <span sort="0.60303030303">0.603</span>
+            </td>
+            <td class="price-per-vcpu">
+              
+              <span sort="1.13068181818">1.131</span>
+            </td>
           <td class="ecu-per-vcpu">
             <span sort="3.875">3.875 units</span>
           </td>
@@ -4537,18 +4814,16 @@
             </span>
           </td>
           <td class="ebs-max-bandwidth">
-            <span sort="1000.0">
-              1000.0 Mbps  <!-- Not MB/s! -->
-            </span>
+            <span sort="0">N/A</span>
           </td>
           <td class="ebs-throughput">
-            <span sort="125.0">
-              125.0 MB/s
+            <span sort="0">
+              0 MB/s
             </span>
           </td>
           <td class="ebs-iops">
-            <span sort="8000.0">
-              8000.0 IOPS
+            <span sort="0">
+              0 IOPS
             </span>
           </td>
           <td class="maxips">
@@ -4610,9 +4885,7 @@
               </span>
           </td>
           <td class="cost-ebs-optimized" data-pricing='{&#34;ap-south-1&#34;: &#34;0.00&#34;, &#34;us-east-1&#34;: &#34;0.00&#34;, &#34;ap-northeast-1&#34;: &#34;0.00&#34;, &#34;ap-southeast-2&#34;: &#34;0.00&#34;, &#34;eu-west-1&#34;: &#34;0.00&#34;, &#34;ap-southeast-1&#34;: &#34;0.00&#34;, &#34;eu-west-2&#34;: &#34;0.00&#34;, &#34;ca-central-1&#34;: &#34;0.00&#34;, &#34;ap-northeast-2&#34;: &#34;0.00&#34;, &#34;us-west-2&#34;: &#34;0.00&#34;, &#34;us-gov-west-1&#34;: {}, &#34;us-west-1&#34;: &#34;0.00&#34;, &#34;eu-central-1&#34;: &#34;0.00&#34;, &#34;sa-east-1&#34;: &#34;0.00&#34;, &#34;us-east-2&#34;: &#34;0.00&#34;}'>
-                <span sort="0.00">
-                  $0.00 hourly
-                </span>
+              <span sort="0">N/A</span>
           </td>
         </tr>
         <tr class='instance' id="c4.4xlarge">
@@ -4627,6 +4900,15 @@
               16 vCPUs
             </span>
           </td>
+            
+            <td class="price-per-mem">
+              
+              <span sort="0.60303030303">0.603</span>
+            </td>
+            <td class="price-per-vcpu">
+              
+              <span sort="1.13068181818">1.131</span>
+            </td>
           <td class="ecu-per-vcpu">
             <span sort="3.875">3.875 units</span>
           </td>
@@ -4650,18 +4932,16 @@
             </span>
           </td>
           <td class="ebs-max-bandwidth">
-            <span sort="2000.0">
-              2000.0 Mbps  <!-- Not MB/s! -->
-            </span>
+            <span sort="0">N/A</span>
           </td>
           <td class="ebs-throughput">
-            <span sort="250.0">
-              250.0 MB/s
+            <span sort="0">
+              0 MB/s
             </span>
           </td>
           <td class="ebs-iops">
-            <span sort="16000.0">
-              16000.0 IOPS
+            <span sort="0">
+              0 IOPS
             </span>
           </td>
           <td class="maxips">
@@ -4723,9 +5003,7 @@
               </span>
           </td>
           <td class="cost-ebs-optimized" data-pricing='{&#34;ap-south-1&#34;: &#34;0.00&#34;, &#34;us-east-1&#34;: &#34;0.00&#34;, &#34;ap-northeast-1&#34;: &#34;0.00&#34;, &#34;ap-southeast-2&#34;: &#34;0.00&#34;, &#34;eu-west-1&#34;: &#34;0.00&#34;, &#34;ap-southeast-1&#34;: &#34;0.00&#34;, &#34;eu-west-2&#34;: &#34;0.00&#34;, &#34;ca-central-1&#34;: &#34;0.00&#34;, &#34;ap-northeast-2&#34;: &#34;0.00&#34;, &#34;us-west-2&#34;: &#34;0.00&#34;, &#34;us-gov-west-1&#34;: {}, &#34;us-west-1&#34;: &#34;0.00&#34;, &#34;eu-central-1&#34;: &#34;0.00&#34;, &#34;sa-east-1&#34;: &#34;0.00&#34;, &#34;us-east-2&#34;: &#34;0.00&#34;}'>
-                <span sort="0.00">
-                  $0.00 hourly
-                </span>
+              <span sort="0">N/A</span>
           </td>
         </tr>
         <tr class='instance' id="c4.8xlarge">
@@ -4740,6 +5018,15 @@
               36 vCPUs
             </span>
           </td>
+            
+            <td class="price-per-mem">
+              
+              <span sort="0.602651515152">0.6027</span>
+            </td>
+            <td class="price-per-vcpu">
+              
+              <span sort="1.00441919192">1.004</span>
+            </td>
           <td class="ecu-per-vcpu">
             <span sort="3.66666666667">3.667 units</span>
           </td>
@@ -4763,18 +5050,16 @@
             </span>
           </td>
           <td class="ebs-max-bandwidth">
-            <span sort="4000.0">
-              4000.0 Mbps  <!-- Not MB/s! -->
-            </span>
+            <span sort="0">N/A</span>
           </td>
           <td class="ebs-throughput">
-            <span sort="500.0">
-              500.0 MB/s
+            <span sort="0">
+              0 MB/s
             </span>
           </td>
           <td class="ebs-iops">
-            <span sort="32000.0">
-              32000.0 IOPS
+            <span sort="0">
+              0 IOPS
             </span>
           </td>
           <td class="maxips">
@@ -4836,9 +5121,7 @@
               </span>
           </td>
           <td class="cost-ebs-optimized" data-pricing='{&#34;ap-south-1&#34;: &#34;0.00&#34;, &#34;us-east-1&#34;: &#34;0.00&#34;, &#34;ap-northeast-1&#34;: &#34;0.00&#34;, &#34;ap-southeast-2&#34;: &#34;0.00&#34;, &#34;eu-west-1&#34;: &#34;0.00&#34;, &#34;ap-southeast-1&#34;: &#34;0.00&#34;, &#34;eu-west-2&#34;: &#34;0.00&#34;, &#34;ca-central-1&#34;: &#34;0.00&#34;, &#34;ap-northeast-2&#34;: &#34;0.00&#34;, &#34;us-west-2&#34;: &#34;0.00&#34;, &#34;us-gov-west-1&#34;: {}, &#34;us-west-1&#34;: &#34;0.00&#34;, &#34;eu-central-1&#34;: &#34;0.00&#34;, &#34;sa-east-1&#34;: &#34;0.00&#34;, &#34;us-east-2&#34;: &#34;0.00&#34;}'>
-                <span sort="0.00">
-                  $0.00 hourly
-                </span>
+              <span sort="0">N/A</span>
           </td>
         </tr>
         <tr class='instance' id="c3.large">
@@ -4853,6 +5136,15 @@
               2 vCPUs
             </span>
           </td>
+            
+            <td class="price-per-mem">
+              
+              <span sort="0.636363636364">0.6364</span>
+            </td>
+            <td class="price-per-vcpu">
+              
+              <span sort="1.19318181818">1.193</span>
+            </td>
           <td class="ecu-per-vcpu">
             <span sort="3.5">3.5 units</span>
           </td>
@@ -4966,6 +5258,15 @@
               4 vCPUs
             </span>
           </td>
+            
+            <td class="price-per-mem">
+              
+              <span sort="0.636363636364">0.6364</span>
+            </td>
+            <td class="price-per-vcpu">
+              
+              <span sort="1.19318181818">1.193</span>
+            </td>
           <td class="ecu-per-vcpu">
             <span sort="3.5">3.5 units</span>
           </td>
@@ -4993,18 +5294,16 @@
             </span>
           </td>
           <td class="ebs-max-bandwidth">
-            <span sort="500.0">
-              500.0 Mbps  <!-- Not MB/s! -->
-            </span>
+            <span sort="0">N/A</span>
           </td>
           <td class="ebs-throughput">
-            <span sort="62.5">
-              62.5 MB/s
+            <span sort="0">
+              0 MB/s
             </span>
           </td>
           <td class="ebs-iops">
-            <span sort="4000.0">
-              4000.0 IOPS
+            <span sort="0">
+              0 IOPS
             </span>
           </td>
           <td class="maxips">
@@ -5066,9 +5365,7 @@
               </span>
           </td>
           <td class="cost-ebs-optimized" data-pricing='{&#34;us-east-1&#34;: &#34;0.02&#34;, &#34;ap-northeast-1&#34;: &#34;0.02&#34;, &#34;eu-west-1&#34;: &#34;0.02&#34;, &#34;ap-northeast-2&#34;: &#34;0.02&#34;, &#34;ap-southeast-1&#34;: &#34;0.02&#34;, &#34;ap-southeast-2&#34;: &#34;0.02&#34;, &#34;us-west-2&#34;: &#34;0.02&#34;, &#34;us-gov-west-1&#34;: &#34;0.02&#34;, &#34;us-west-1&#34;: &#34;0.02&#34;, &#34;eu-central-1&#34;: &#34;0.02&#34;, &#34;sa-east-1&#34;: &#34;0.02&#34;}'>
-                <span sort="0.02">
-                  $0.02 hourly
-                </span>
+              <span sort="0">N/A</span>
           </td>
         </tr>
         <tr class='instance' id="c3.2xlarge">
@@ -5083,6 +5380,15 @@
               8 vCPUs
             </span>
           </td>
+            
+            <td class="price-per-mem">
+              
+              <span sort="0.636363636364">0.6364</span>
+            </td>
+            <td class="price-per-vcpu">
+              
+              <span sort="1.19318181818">1.193</span>
+            </td>
           <td class="ecu-per-vcpu">
             <span sort="3.5">3.5 units</span>
           </td>
@@ -5110,18 +5416,16 @@
             </span>
           </td>
           <td class="ebs-max-bandwidth">
-            <span sort="1000.0">
-              1000.0 Mbps  <!-- Not MB/s! -->
-            </span>
+            <span sort="0">N/A</span>
           </td>
           <td class="ebs-throughput">
-            <span sort="125.0">
-              125.0 MB/s
+            <span sort="0">
+              0 MB/s
             </span>
           </td>
           <td class="ebs-iops">
-            <span sort="8000.0">
-              8000.0 IOPS
+            <span sort="0">
+              0 IOPS
             </span>
           </td>
           <td class="maxips">
@@ -5183,9 +5487,7 @@
               </span>
           </td>
           <td class="cost-ebs-optimized" data-pricing='{&#34;us-east-1&#34;: &#34;0.05&#34;, &#34;ap-northeast-1&#34;: &#34;0.05&#34;, &#34;eu-west-1&#34;: &#34;0.05&#34;, &#34;ap-northeast-2&#34;: &#34;0.05&#34;, &#34;ap-southeast-1&#34;: &#34;0.05&#34;, &#34;ap-southeast-2&#34;: &#34;0.05&#34;, &#34;us-west-2&#34;: &#34;0.05&#34;, &#34;us-gov-west-1&#34;: &#34;0.05&#34;, &#34;us-west-1&#34;: &#34;0.05&#34;, &#34;eu-central-1&#34;: &#34;0.05&#34;, &#34;sa-east-1&#34;: &#34;0.05&#34;}'>
-                <span sort="0.05">
-                  $0.05 hourly
-                </span>
+              <span sort="0">N/A</span>
           </td>
         </tr>
         <tr class='instance' id="c3.4xlarge">
@@ -5200,6 +5502,15 @@
               16 vCPUs
             </span>
           </td>
+            
+            <td class="price-per-mem">
+              
+              <span sort="0.636363636364">0.6364</span>
+            </td>
+            <td class="price-per-vcpu">
+              
+              <span sort="1.19318181818">1.193</span>
+            </td>
           <td class="ecu-per-vcpu">
             <span sort="3.4375">3.438 units</span>
           </td>
@@ -5227,18 +5538,16 @@
             </span>
           </td>
           <td class="ebs-max-bandwidth">
-            <span sort="2000.0">
-              2000.0 Mbps  <!-- Not MB/s! -->
-            </span>
+            <span sort="0">N/A</span>
           </td>
           <td class="ebs-throughput">
-            <span sort="250.0">
-              250.0 MB/s
+            <span sort="0">
+              0 MB/s
             </span>
           </td>
           <td class="ebs-iops">
-            <span sort="16000.0">
-              16000.0 IOPS
+            <span sort="0">
+              0 IOPS
             </span>
           </td>
           <td class="maxips">
@@ -5300,9 +5609,7 @@
               </span>
           </td>
           <td class="cost-ebs-optimized" data-pricing='{&#34;us-east-1&#34;: &#34;0.10&#34;, &#34;ap-northeast-1&#34;: &#34;0.10&#34;, &#34;eu-west-1&#34;: &#34;0.10&#34;, &#34;ap-northeast-2&#34;: &#34;0.10&#34;, &#34;ap-southeast-1&#34;: &#34;0.10&#34;, &#34;ap-southeast-2&#34;: &#34;0.10&#34;, &#34;us-west-2&#34;: &#34;0.10&#34;, &#34;us-gov-west-1&#34;: &#34;0.10&#34;, &#34;us-west-1&#34;: &#34;0.10&#34;, &#34;eu-central-1&#34;: &#34;0.10&#34;, &#34;sa-east-1&#34;: &#34;0.10&#34;}'>
-                <span sort="0.10">
-                  $0.10 hourly
-                </span>
+              <span sort="0">N/A</span>
           </td>
         </tr>
         <tr class='instance' id="c3.8xlarge">
@@ -5317,6 +5624,15 @@
               32 vCPUs
             </span>
           </td>
+            
+            <td class="price-per-mem">
+              
+              <span sort="0.636363636364">0.6364</span>
+            </td>
+            <td class="price-per-vcpu">
+              
+              <span sort="1.19318181818">1.193</span>
+            </td>
           <td class="ecu-per-vcpu">
             <span sort="3.375">3.375 units</span>
           </td>
@@ -5430,6 +5746,15 @@
               4 vCPUs
             </span>
           </td>
+            
+            <td class="price-per-mem">
+              
+              <span sort="0.335320417288">0.3353</span>
+            </td>
+            <td class="price-per-vcpu">
+              
+              <span sort="5.11363636364">5.114</span>
+            </td>
           <td class="ecu-per-vcpu">
             <span sort="3.0">3 units</span>
           </td>
@@ -5453,18 +5778,16 @@
             </span>
           </td>
           <td class="ebs-max-bandwidth">
-            <span sort="750.0">
-              750.0 Mbps  <!-- Not MB/s! -->
-            </span>
+            <span sort="0">N/A</span>
           </td>
           <td class="ebs-throughput">
-            <span sort="93.75">
-              93.75 MB/s
+            <span sort="0">
+              0 MB/s
             </span>
           </td>
           <td class="ebs-iops">
-            <span sort="6000.0">
-              6000.0 IOPS
+            <span sort="0">
+              0 IOPS
             </span>
           </td>
           <td class="maxips">
@@ -5518,7 +5841,7 @@
               <span sort="0">unavailable</span>
           </td>
           <td class="cost-ebs-optimized" data-pricing='{&#34;us-west-2&#34;: {}, &#34;us-east-1&#34;: {}, &#34;us-gov-west-1&#34;: {}, &#34;eu-west-1&#34;: {}}'>
-                <span sort="0">0</span>
+              <span sort="0">N/A</span>
           </td>
         </tr>
         <tr class='instance' id="p2.8xlarge">
@@ -5533,6 +5856,15 @@
               32 vCPUs
             </span>
           </td>
+            
+            <td class="price-per-mem">
+              
+              <span sort="0.335320417288">0.3353</span>
+            </td>
+            <td class="price-per-vcpu">
+              
+              <span sort="5.11363636364">5.114</span>
+            </td>
           <td class="ecu-per-vcpu">
             <span sort="2.9375">2.938 units</span>
           </td>
@@ -5556,18 +5888,16 @@
             </span>
           </td>
           <td class="ebs-max-bandwidth">
-            <span sort="5000.0">
-              5000.0 Mbps  <!-- Not MB/s! -->
-            </span>
+            <span sort="0">N/A</span>
           </td>
           <td class="ebs-throughput">
-            <span sort="625.0">
-              625.0 MB/s
+            <span sort="0">
+              0 MB/s
             </span>
           </td>
           <td class="ebs-iops">
-            <span sort="32500.0">
-              32500.0 IOPS
+            <span sort="0">
+              0 IOPS
             </span>
           </td>
           <td class="maxips">
@@ -5621,7 +5951,7 @@
               <span sort="0">unavailable</span>
           </td>
           <td class="cost-ebs-optimized" data-pricing='{&#34;us-west-2&#34;: {}, &#34;us-east-1&#34;: {}, &#34;us-gov-west-1&#34;: {}, &#34;eu-west-1&#34;: {}}'>
-                <span sort="0">0</span>
+              <span sort="0">N/A</span>
           </td>
         </tr>
         <tr class='instance' id="p2.16xlarge">
@@ -5636,6 +5966,15 @@
               64 vCPUs
             </span>
           </td>
+            
+            <td class="price-per-mem">
+              
+              <span sort="0.447093889717">0.4471</span>
+            </td>
+            <td class="price-per-vcpu">
+              
+              <span sort="5.11363636364">5.114</span>
+            </td>
           <td class="ecu-per-vcpu">
             <span sort="2.9375">2.938 units</span>
           </td>
@@ -5659,18 +5998,16 @@
             </span>
           </td>
           <td class="ebs-max-bandwidth">
-            <span sort="10000.0">
-              10000.0 Mbps  <!-- Not MB/s! -->
-            </span>
+            <span sort="0">N/A</span>
           </td>
           <td class="ebs-throughput">
-            <span sort="1250.0">
-              1250.0 MB/s
+            <span sort="0">
+              0 MB/s
             </span>
           </td>
           <td class="ebs-iops">
-            <span sort="65000.0">
-              65000.0 IOPS
+            <span sort="0">
+              0 IOPS
             </span>
           </td>
           <td class="maxips">
@@ -5724,7 +6061,7 @@
               <span sort="0">unavailable</span>
           </td>
           <td class="cost-ebs-optimized" data-pricing='{&#34;us-west-2&#34;: {}, &#34;us-east-1&#34;: {}, &#34;us-gov-west-1&#34;: {}, &#34;eu-west-1&#34;: {}}'>
-                <span sort="0">0</span>
+              <span sort="0">N/A</span>
           </td>
         </tr>
         <tr class='instance' id="g2.2xlarge">
@@ -5739,6 +6076,15 @@
               8 vCPUs
             </span>
           </td>
+            
+            <td class="price-per-mem">
+              
+              <span sort="0.984848484848">0.9848</span>
+            </td>
+            <td class="price-per-vcpu">
+              
+              <span sort="1.84659090909">1.847</span>
+            </td>
           <td class="ecu-per-vcpu">
             <span sort="3.25">3.25 units</span>
           </td>
@@ -5766,18 +6112,16 @@
             </span>
           </td>
           <td class="ebs-max-bandwidth">
-            <span sort="1000.0">
-              1000.0 Mbps  <!-- Not MB/s! -->
-            </span>
+            <span sort="0">N/A</span>
           </td>
           <td class="ebs-throughput">
-            <span sort="125.0">
-              125.0 MB/s
+            <span sort="0">
+              0 MB/s
             </span>
           </td>
           <td class="ebs-iops">
-            <span sort="8000.0">
-              8000.0 IOPS
+            <span sort="0">
+              0 IOPS
             </span>
           </td>
           <td class="maxips">
@@ -5839,9 +6183,7 @@
               </span>
           </td>
           <td class="cost-ebs-optimized" data-pricing='{&#34;us-east-1&#34;: &#34;0.05&#34;, &#34;ap-northeast-1&#34;: {}, &#34;ap-northeast-2&#34;: &#34;0.05&#34;, &#34;ap-southeast-1&#34;: &#34;0.05&#34;, &#34;ap-southeast-2&#34;: {}, &#34;us-west-2&#34;: &#34;0.05&#34;, &#34;us-west-1&#34;: &#34;0.05&#34;, &#34;eu-central-1&#34;: &#34;0.05&#34;, &#34;eu-west-1&#34;: &#34;0.05&#34;}'>
-                <span sort="0.05">
-                  $0.05 hourly
-                </span>
+              <span sort="0">N/A</span>
           </td>
         </tr>
         <tr class='instance' id="g2.8xlarge">
@@ -5856,6 +6198,15 @@
               32 vCPUs
             </span>
           </td>
+            
+            <td class="price-per-mem">
+              
+              <span sort="0.984848484848">0.9848</span>
+            </td>
+            <td class="price-per-vcpu">
+              
+              <span sort="1.84659090909">1.847</span>
+            </td>
           <td class="ecu-per-vcpu">
             <span sort="3.25">3.25 units</span>
           </td>
@@ -5961,6 +6312,15 @@
               64 vCPUs
             </span>
           </td>
+            
+            <td class="price-per-mem">
+              
+              <span sort="0.155295268256">0.1553</span>
+            </td>
+            <td class="price-per-vcpu">
+              
+              <span sort="2.36825284091">2.368</span>
+            </td>
           <td class="ecu-per-vcpu">
             <span sort="2.7265625">2.727 units</span>
           </td>
@@ -5988,18 +6348,16 @@
             </span>
           </td>
           <td class="ebs-max-bandwidth">
-            <span sort="5000.0">
-              5000.0 Mbps  <!-- Not MB/s! -->
-            </span>
+            <span sort="0">N/A</span>
           </td>
           <td class="ebs-throughput">
-            <span sort="625.0">
-              625.0 MB/s
+            <span sort="0">
+              0 MB/s
             </span>
           </td>
           <td class="ebs-iops">
-            <span sort="32500.0">
-              32500.0 IOPS
+            <span sort="0">
+              0 IOPS
             </span>
           </td>
           <td class="maxips">
@@ -6061,7 +6419,7 @@
               </span>
           </td>
           <td class="cost-ebs-optimized" data-pricing='{&#34;us-east-1&#34;: {}, &#34;ap-northeast-1&#34;: {}, &#34;ap-southeast-2&#34;: {}, &#34;eu-west-1&#34;: {}, &#34;ap-southeast-1&#34;: {}, &#34;ca-central-1&#34;: &#34;0.00&#34;, &#34;ap-northeast-2&#34;: {}, &#34;us-west-2&#34;: {}, &#34;us-gov-west-1&#34;: {}, &#34;ap-south-1&#34;: {}, &#34;eu-central-1&#34;: {}, &#34;us-east-2&#34;: &#34;0.00&#34;, &#34;eu-west-2&#34;: &#34;0.00&#34;}'>
-                <span sort="0">0</span>
+              <span sort="0">N/A</span>
           </td>
         </tr>
         <tr class='instance' id="x1.32xlarge">
@@ -6076,6 +6434,15 @@
               128 vCPUs
             </span>
           </td>
+            
+            <td class="price-per-mem">
+              
+              <span sort="0.155295268256">0.1553</span>
+            </td>
+            <td class="price-per-vcpu">
+              
+              <span sort="2.36825284091">2.368</span>
+            </td>
           <td class="ecu-per-vcpu">
             <span sort="2.7265625">2.727 units</span>
           </td>
@@ -6103,18 +6470,16 @@
             </span>
           </td>
           <td class="ebs-max-bandwidth">
-            <span sort="10000.0">
-              10000.0 Mbps  <!-- Not MB/s! -->
-            </span>
+            <span sort="0">N/A</span>
           </td>
           <td class="ebs-throughput">
-            <span sort="1250.0">
-              1250.0 MB/s
+            <span sort="0">
+              0 MB/s
             </span>
           </td>
           <td class="ebs-iops">
-            <span sort="65000.0">
-              65000.0 IOPS
+            <span sort="0">
+              0 IOPS
             </span>
           </td>
           <td class="maxips">
@@ -6176,7 +6541,7 @@
               </span>
           </td>
           <td class="cost-ebs-optimized" data-pricing='{&#34;us-east-1&#34;: {}, &#34;ap-northeast-1&#34;: {}, &#34;ap-southeast-2&#34;: {}, &#34;eu-west-1&#34;: {}, &#34;ap-southeast-1&#34;: {}, &#34;ca-central-1&#34;: &#34;0.00&#34;, &#34;ap-northeast-2&#34;: {}, &#34;us-west-2&#34;: {}, &#34;us-gov-west-1&#34;: {}, &#34;ap-south-1&#34;: {}, &#34;eu-central-1&#34;: {}, &#34;us-east-2&#34;: &#34;0.00&#34;, &#34;eu-west-2&#34;: &#34;0.00&#34;}'>
-                <span sort="0">0</span>
+              <span sort="0">N/A</span>
           </td>
         </tr>
         <tr class='instance' id="r4.large">
@@ -6191,6 +6556,15 @@
               2 vCPUs
             </span>
           </td>
+            
+            <td class="price-per-mem">
+              
+              <span sort="0.198211624441">0.1982</span>
+            </td>
+            <td class="price-per-vcpu">
+              
+              <span sort="1.51136363636">1.511</span>
+            </td>
           <td class="ecu-per-vcpu">
             <span sort="3.5">3.5 units</span>
           </td>
@@ -6214,18 +6588,16 @@
             </span>
           </td>
           <td class="ebs-max-bandwidth">
-            <span sort="400.0">
-              400.0 Mbps  <!-- Not MB/s! -->
-            </span>
+            <span sort="0">N/A</span>
           </td>
           <td class="ebs-throughput">
-            <span sort="50.0">
-              50.0 MB/s
+            <span sort="0">
+              0 MB/s
             </span>
           </td>
           <td class="ebs-iops">
-            <span sort="3000.0">
-              3000.0 IOPS
+            <span sort="0">
+              0 IOPS
             </span>
           </td>
           <td class="maxips">
@@ -6287,7 +6659,7 @@
               </span>
           </td>
           <td class="cost-ebs-optimized" data-pricing='{&#34;ap-south-1&#34;: {}, &#34;us-east-1&#34;: {}, &#34;ap-northeast-1&#34;: {}, &#34;ap-southeast-2&#34;: {}, &#34;eu-west-1&#34;: {}, &#34;ap-southeast-1&#34;: {}, &#34;eu-west-2&#34;: {}, &#34;ca-central-1&#34;: {}, &#34;ap-northeast-2&#34;: {}, &#34;us-west-2&#34;: {}, &#34;us-gov-west-1&#34;: {}, &#34;us-west-1&#34;: {}, &#34;eu-central-1&#34;: {}, &#34;sa-east-1&#34;: {}, &#34;us-east-2&#34;: &#34;0.00&#34;}'>
-                <span sort="0">0</span>
+              <span sort="0">N/A</span>
           </td>
         </tr>
         <tr class='instance' id="r4.xlarge">
@@ -6302,6 +6674,15 @@
               4 vCPUs
             </span>
           </td>
+            
+            <td class="price-per-mem">
+              
+              <span sort="0.198211624441">0.1982</span>
+            </td>
+            <td class="price-per-vcpu">
+              
+              <span sort="1.51136363636">1.511</span>
+            </td>
           <td class="ecu-per-vcpu">
             <span sort="3.375">3.375 units</span>
           </td>
@@ -6325,18 +6706,16 @@
             </span>
           </td>
           <td class="ebs-max-bandwidth">
-            <span sort="800.0">
-              800.0 Mbps  <!-- Not MB/s! -->
-            </span>
+            <span sort="0">N/A</span>
           </td>
           <td class="ebs-throughput">
-            <span sort="100.0">
-              100.0 MB/s
+            <span sort="0">
+              0 MB/s
             </span>
           </td>
           <td class="ebs-iops">
-            <span sort="6000.0">
-              6000.0 IOPS
+            <span sort="0">
+              0 IOPS
             </span>
           </td>
           <td class="maxips">
@@ -6398,7 +6777,7 @@
               </span>
           </td>
           <td class="cost-ebs-optimized" data-pricing='{&#34;ap-south-1&#34;: {}, &#34;us-east-1&#34;: {}, &#34;ap-northeast-1&#34;: {}, &#34;ap-southeast-2&#34;: {}, &#34;eu-west-1&#34;: {}, &#34;ap-southeast-1&#34;: {}, &#34;eu-west-2&#34;: {}, &#34;ca-central-1&#34;: {}, &#34;ap-northeast-2&#34;: {}, &#34;us-west-2&#34;: {}, &#34;us-gov-west-1&#34;: {}, &#34;us-west-1&#34;: {}, &#34;eu-central-1&#34;: {}, &#34;sa-east-1&#34;: {}, &#34;us-east-2&#34;: &#34;0.00&#34;}'>
-                <span sort="0">0</span>
+              <span sort="0">N/A</span>
           </td>
         </tr>
         <tr class='instance' id="r4.2xlarge">
@@ -6413,6 +6792,15 @@
               8 vCPUs
             </span>
           </td>
+            
+            <td class="price-per-mem">
+              
+              <span sort="0.198211624441">0.1982</span>
+            </td>
+            <td class="price-per-vcpu">
+              
+              <span sort="1.51136363636">1.511</span>
+            </td>
           <td class="ecu-per-vcpu">
             <span sort="3.375">3.375 units</span>
           </td>
@@ -6436,18 +6824,16 @@
             </span>
           </td>
           <td class="ebs-max-bandwidth">
-            <span sort="1600.0">
-              1600.0 Mbps  <!-- Not MB/s! -->
-            </span>
+            <span sort="0">N/A</span>
           </td>
           <td class="ebs-throughput">
-            <span sort="200.0">
-              200.0 MB/s
+            <span sort="0">
+              0 MB/s
             </span>
           </td>
           <td class="ebs-iops">
-            <span sort="12000.0">
-              12000.0 IOPS
+            <span sort="0">
+              0 IOPS
             </span>
           </td>
           <td class="maxips">
@@ -6509,7 +6895,7 @@
               </span>
           </td>
           <td class="cost-ebs-optimized" data-pricing='{&#34;ap-south-1&#34;: {}, &#34;us-east-1&#34;: {}, &#34;ap-northeast-1&#34;: {}, &#34;ap-southeast-2&#34;: {}, &#34;eu-west-1&#34;: {}, &#34;ap-southeast-1&#34;: {}, &#34;eu-west-2&#34;: {}, &#34;ca-central-1&#34;: {}, &#34;ap-northeast-2&#34;: {}, &#34;us-west-2&#34;: {}, &#34;us-gov-west-1&#34;: {}, &#34;us-west-1&#34;: {}, &#34;eu-central-1&#34;: {}, &#34;sa-east-1&#34;: {}, &#34;us-east-2&#34;: &#34;0.00&#34;}'>
-                <span sort="0">0</span>
+              <span sort="0">N/A</span>
           </td>
         </tr>
         <tr class='instance' id="r4.4xlarge">
@@ -6524,6 +6910,15 @@
               16 vCPUs
             </span>
           </td>
+            
+            <td class="price-per-mem">
+              
+              <span sort="0.198211624441">0.1982</span>
+            </td>
+            <td class="price-per-vcpu">
+              
+              <span sort="1.51136363636">1.511</span>
+            </td>
           <td class="ecu-per-vcpu">
             <span sort="3.3125">3.312 units</span>
           </td>
@@ -6547,18 +6942,16 @@
             </span>
           </td>
           <td class="ebs-max-bandwidth">
-            <span sort="3000.0">
-              3000.0 Mbps  <!-- Not MB/s! -->
-            </span>
+            <span sort="0">N/A</span>
           </td>
           <td class="ebs-throughput">
-            <span sort="375.0">
-              375.0 MB/s
+            <span sort="0">
+              0 MB/s
             </span>
           </td>
           <td class="ebs-iops">
-            <span sort="16000.0">
-              16000.0 IOPS
+            <span sort="0">
+              0 IOPS
             </span>
           </td>
           <td class="maxips">
@@ -6620,7 +7013,7 @@
               </span>
           </td>
           <td class="cost-ebs-optimized" data-pricing='{&#34;ap-south-1&#34;: {}, &#34;us-east-1&#34;: {}, &#34;ap-northeast-1&#34;: {}, &#34;ap-southeast-2&#34;: {}, &#34;eu-west-1&#34;: {}, &#34;ap-southeast-1&#34;: {}, &#34;eu-west-2&#34;: {}, &#34;ca-central-1&#34;: {}, &#34;ap-northeast-2&#34;: {}, &#34;us-west-2&#34;: {}, &#34;us-gov-west-1&#34;: {}, &#34;us-west-1&#34;: {}, &#34;eu-central-1&#34;: {}, &#34;sa-east-1&#34;: {}, &#34;us-east-2&#34;: &#34;0.00&#34;}'>
-                <span sort="0">0</span>
+              <span sort="0">N/A</span>
           </td>
         </tr>
         <tr class='instance' id="r4.8xlarge">
@@ -6635,6 +7028,15 @@
               32 vCPUs
             </span>
           </td>
+            
+            <td class="price-per-mem">
+              
+              <span sort="0.198211624441">0.1982</span>
+            </td>
+            <td class="price-per-vcpu">
+              
+              <span sort="1.51136363636">1.511</span>
+            </td>
           <td class="ecu-per-vcpu">
             <span sort="3.09375">3.094 units</span>
           </td>
@@ -6658,18 +7060,16 @@
             </span>
           </td>
           <td class="ebs-max-bandwidth">
-            <span sort="6000.0">
-              6000.0 Mbps  <!-- Not MB/s! -->
-            </span>
+            <span sort="0">N/A</span>
           </td>
           <td class="ebs-throughput">
-            <span sort="750.0">
-              750.0 MB/s
+            <span sort="0">
+              0 MB/s
             </span>
           </td>
           <td class="ebs-iops">
-            <span sort="32000.0">
-              32000.0 IOPS
+            <span sort="0">
+              0 IOPS
             </span>
           </td>
           <td class="maxips">
@@ -6731,7 +7131,7 @@
               </span>
           </td>
           <td class="cost-ebs-optimized" data-pricing='{&#34;ap-south-1&#34;: {}, &#34;us-east-1&#34;: {}, &#34;ap-northeast-1&#34;: {}, &#34;ap-southeast-2&#34;: {}, &#34;eu-west-1&#34;: {}, &#34;ap-southeast-1&#34;: {}, &#34;eu-west-2&#34;: {}, &#34;ca-central-1&#34;: {}, &#34;ap-northeast-2&#34;: {}, &#34;us-west-2&#34;: {}, &#34;us-gov-west-1&#34;: {}, &#34;us-west-1&#34;: {}, &#34;eu-central-1&#34;: {}, &#34;sa-east-1&#34;: {}, &#34;us-east-2&#34;: &#34;0.00&#34;}'>
-                <span sort="0">0</span>
+              <span sort="0">N/A</span>
           </td>
         </tr>
         <tr class='instance' id="r4.16xlarge">
@@ -6746,6 +7146,15 @@
               64 vCPUs
             </span>
           </td>
+            
+            <td class="price-per-mem">
+              
+              <span sort="0.198211624441">0.1982</span>
+            </td>
+            <td class="price-per-vcpu">
+              
+              <span sort="1.51136363636">1.511</span>
+            </td>
           <td class="ecu-per-vcpu">
             <span sort="3.046875">3.047 units</span>
           </td>
@@ -6769,18 +7178,16 @@
             </span>
           </td>
           <td class="ebs-max-bandwidth">
-            <span sort="12000.0">
-              12000.0 Mbps  <!-- Not MB/s! -->
-            </span>
+            <span sort="0">N/A</span>
           </td>
           <td class="ebs-throughput">
-            <span sort="1500.0">
-              1500.0 MB/s
+            <span sort="0">
+              0 MB/s
             </span>
           </td>
           <td class="ebs-iops">
-            <span sort="65000.0">
-              65000.0 IOPS
+            <span sort="0">
+              0 IOPS
             </span>
           </td>
           <td class="maxips">
@@ -6842,7 +7249,7 @@
               </span>
           </td>
           <td class="cost-ebs-optimized" data-pricing='{&#34;ap-south-1&#34;: {}, &#34;us-east-1&#34;: {}, &#34;ap-northeast-1&#34;: {}, &#34;ap-southeast-2&#34;: {}, &#34;eu-west-1&#34;: {}, &#34;ap-southeast-1&#34;: {}, &#34;eu-west-2&#34;: {}, &#34;ca-central-1&#34;: {}, &#34;ap-northeast-2&#34;: {}, &#34;us-west-2&#34;: {}, &#34;us-gov-west-1&#34;: {}, &#34;us-west-1&#34;: {}, &#34;eu-central-1&#34;: {}, &#34;sa-east-1&#34;: {}, &#34;us-east-2&#34;: &#34;0.00&#34;}'>
-                <span sort="0">0</span>
+              <span sort="0">N/A</span>
           </td>
         </tr>
         <tr class='instance' id="r3.large">
@@ -6857,6 +7264,15 @@
               2 vCPUs
             </span>
           </td>
+            
+            <td class="price-per-mem">
+              
+              <span sort="0.24739195231">0.2474</span>
+            </td>
+            <td class="price-per-vcpu">
+              
+              <span sort="1.88636363636">1.886</span>
+            </td>
           <td class="ecu-per-vcpu">
             <span sort="3.25">3.25 units</span>
           </td>
@@ -6970,6 +7386,15 @@
               4 vCPUs
             </span>
           </td>
+            
+            <td class="price-per-mem">
+              
+              <span sort="0.248137108793">0.2481</span>
+            </td>
+            <td class="price-per-vcpu">
+              
+              <span sort="1.89204545455">1.892</span>
+            </td>
           <td class="ecu-per-vcpu">
             <span sort="3.25">3.25 units</span>
           </td>
@@ -6997,18 +7422,16 @@
             </span>
           </td>
           <td class="ebs-max-bandwidth">
-            <span sort="500.0">
-              500.0 Mbps  <!-- Not MB/s! -->
-            </span>
+            <span sort="0">N/A</span>
           </td>
           <td class="ebs-throughput">
-            <span sort="62.5">
-              62.5 MB/s
+            <span sort="0">
+              0 MB/s
             </span>
           </td>
           <td class="ebs-iops">
-            <span sort="4000.0">
-              4000.0 IOPS
+            <span sort="0">
+              0 IOPS
             </span>
           </td>
           <td class="maxips">
@@ -7070,9 +7493,7 @@
               </span>
           </td>
           <td class="cost-ebs-optimized" data-pricing='{&#34;ap-south-1&#34;: &#34;0.02&#34;, &#34;us-east-1&#34;: &#34;0.02&#34;, &#34;ap-northeast-1&#34;: &#34;0.02&#34;, &#34;ap-southeast-2&#34;: &#34;0.02&#34;, &#34;eu-west-1&#34;: &#34;0.02&#34;, &#34;ap-southeast-1&#34;: &#34;0.02&#34;, &#34;ap-northeast-2&#34;: &#34;0.02&#34;, &#34;us-west-2&#34;: &#34;0.02&#34;, &#34;us-gov-west-1&#34;: &#34;0.02&#34;, &#34;us-west-1&#34;: &#34;0.02&#34;, &#34;eu-central-1&#34;: &#34;0.02&#34;, &#34;sa-east-1&#34;: &#34;0.02&#34;, &#34;us-east-2&#34;: &#34;0.02&#34;}'>
-                <span sort="0.02">
-                  $0.02 hourly
-                </span>
+              <span sort="0">N/A</span>
           </td>
         </tr>
         <tr class='instance' id="r3.2xlarge">
@@ -7087,6 +7508,15 @@
               8 vCPUs
             </span>
           </td>
+            
+            <td class="price-per-mem">
+              
+              <span sort="0.247764530551">0.2478</span>
+            </td>
+            <td class="price-per-vcpu">
+              
+              <span sort="1.88920454545">1.889</span>
+            </td>
           <td class="ecu-per-vcpu">
             <span sort="3.25">3.25 units</span>
           </td>
@@ -7114,18 +7544,16 @@
             </span>
           </td>
           <td class="ebs-max-bandwidth">
-            <span sort="1000.0">
-              1000.0 Mbps  <!-- Not MB/s! -->
-            </span>
+            <span sort="0">N/A</span>
           </td>
           <td class="ebs-throughput">
-            <span sort="125.0">
-              125.0 MB/s
+            <span sort="0">
+              0 MB/s
             </span>
           </td>
           <td class="ebs-iops">
-            <span sort="8000.0">
-              8000.0 IOPS
+            <span sort="0">
+              0 IOPS
             </span>
           </td>
           <td class="maxips">
@@ -7187,9 +7615,7 @@
               </span>
           </td>
           <td class="cost-ebs-optimized" data-pricing='{&#34;ap-south-1&#34;: &#34;0.05&#34;, &#34;us-east-1&#34;: &#34;0.05&#34;, &#34;ap-northeast-1&#34;: &#34;0.05&#34;, &#34;ap-southeast-2&#34;: &#34;0.05&#34;, &#34;eu-west-1&#34;: &#34;0.05&#34;, &#34;ap-southeast-1&#34;: &#34;0.05&#34;, &#34;ap-northeast-2&#34;: &#34;0.05&#34;, &#34;us-west-2&#34;: &#34;0.05&#34;, &#34;us-gov-west-1&#34;: &#34;0.05&#34;, &#34;us-west-1&#34;: &#34;0.05&#34;, &#34;eu-central-1&#34;: &#34;0.05&#34;, &#34;sa-east-1&#34;: &#34;0.05&#34;, &#34;us-east-2&#34;: &#34;0.05&#34;}'>
-                <span sort="0.05">
-                  $0.05 hourly
-                </span>
+              <span sort="0">N/A</span>
           </td>
         </tr>
         <tr class='instance' id="r3.4xlarge">
@@ -7204,6 +7630,15 @@
               16 vCPUs
             </span>
           </td>
+            
+            <td class="price-per-mem">
+              
+              <span sort="0.247764530551">0.2478</span>
+            </td>
+            <td class="price-per-vcpu">
+              
+              <span sort="1.88920454545">1.889</span>
+            </td>
           <td class="ecu-per-vcpu">
             <span sort="3.25">3.25 units</span>
           </td>
@@ -7231,18 +7666,16 @@
             </span>
           </td>
           <td class="ebs-max-bandwidth">
-            <span sort="2000.0">
-              2000.0 Mbps  <!-- Not MB/s! -->
-            </span>
+            <span sort="0">N/A</span>
           </td>
           <td class="ebs-throughput">
-            <span sort="250.0">
-              250.0 MB/s
+            <span sort="0">
+              0 MB/s
             </span>
           </td>
           <td class="ebs-iops">
-            <span sort="16000.0">
-              16000.0 IOPS
+            <span sort="0">
+              0 IOPS
             </span>
           </td>
           <td class="maxips">
@@ -7304,9 +7737,7 @@
               </span>
           </td>
           <td class="cost-ebs-optimized" data-pricing='{&#34;ap-south-1&#34;: &#34;0.10&#34;, &#34;us-east-1&#34;: &#34;0.10&#34;, &#34;ap-northeast-1&#34;: &#34;0.10&#34;, &#34;ap-southeast-2&#34;: &#34;0.10&#34;, &#34;eu-west-1&#34;: &#34;0.10&#34;, &#34;ap-southeast-1&#34;: &#34;0.10&#34;, &#34;ap-northeast-2&#34;: &#34;0.10&#34;, &#34;us-west-2&#34;: &#34;0.10&#34;, &#34;us-gov-west-1&#34;: &#34;0.10&#34;, &#34;us-west-1&#34;: &#34;0.10&#34;, &#34;eu-central-1&#34;: &#34;0.10&#34;, &#34;sa-east-1&#34;: &#34;0.10&#34;, &#34;us-east-2&#34;: &#34;0.10&#34;}'>
-                <span sort="0.10">
-                  $0.10 hourly
-                </span>
+              <span sort="0">N/A</span>
           </td>
         </tr>
         <tr class='instance' id="r3.8xlarge">
@@ -7321,6 +7752,15 @@
               32 vCPUs
             </span>
           </td>
+            
+            <td class="price-per-mem">
+              
+              <span sort="0.247764530551">0.2478</span>
+            </td>
+            <td class="price-per-vcpu">
+              
+              <span sort="1.88920454545">1.889</span>
+            </td>
           <td class="ecu-per-vcpu">
             <span sort="3.25">3.25 units</span>
           </td>
@@ -7434,6 +7874,15 @@
               2 vCPUs
             </span>
           </td>
+            
+            <td class="price-per-mem">
+              
+              <span sort="0.232488822653">0.2325</span>
+            </td>
+            <td class="price-per-vcpu">
+              
+              <span sort="1.77272727273">1.773</span>
+            </td>
           <td class="ecu-per-vcpu">
             <span sort="3.5">3.5 units</span>
           </td>
@@ -7461,18 +7910,16 @@
             </span>
           </td>
           <td class="ebs-max-bandwidth">
-            <span sort="425.0">
-              425.0 Mbps  <!-- Not MB/s! -->
-            </span>
+            <span sort="0">N/A</span>
           </td>
           <td class="ebs-throughput">
-            <span sort="50.0">
-              50.0 MB/s
+            <span sort="0">
+              0 MB/s
             </span>
           </td>
           <td class="ebs-iops">
-            <span sort="3000.0">
-              3000.0 IOPS
+            <span sort="0">
+              0 IOPS
             </span>
           </td>
           <td class="maxips">
@@ -7534,7 +7981,7 @@
               </span>
           </td>
           <td class="cost-ebs-optimized" data-pricing='{&#34;ap-south-1&#34;: {}, &#34;us-east-1&#34;: {}, &#34;ap-northeast-1&#34;: {}, &#34;ap-southeast-2&#34;: {}, &#34;eu-west-1&#34;: {}, &#34;ap-southeast-1&#34;: {}, &#34;eu-west-2&#34;: {}, &#34;ca-central-1&#34;: {}, &#34;ap-northeast-2&#34;: {}, &#34;us-west-2&#34;: {}, &#34;us-gov-west-1&#34;: {}, &#34;us-west-1&#34;: {}, &#34;eu-central-1&#34;: {}, &#34;sa-east-1&#34;: {}, &#34;us-east-2&#34;: {}}'>
-                <span sort="0">0</span>
+              <span sort="0">N/A</span>
           </td>
         </tr>
         <tr class='instance' id="i3.xlarge">
@@ -7549,6 +7996,15 @@
               4 vCPUs
             </span>
           </td>
+            
+            <td class="price-per-mem">
+              
+              <span sort="0.232488822653">0.2325</span>
+            </td>
+            <td class="price-per-vcpu">
+              
+              <span sort="1.77272727273">1.773</span>
+            </td>
           <td class="ecu-per-vcpu">
             <span sort="3.25">3.25 units</span>
           </td>
@@ -7576,18 +8032,16 @@
             </span>
           </td>
           <td class="ebs-max-bandwidth">
-            <span sort="850.0">
-              850.0 Mbps  <!-- Not MB/s! -->
-            </span>
+            <span sort="0">N/A</span>
           </td>
           <td class="ebs-throughput">
-            <span sort="100.0">
-              100.0 MB/s
+            <span sort="0">
+              0 MB/s
             </span>
           </td>
           <td class="ebs-iops">
-            <span sort="6000.0">
-              6000.0 IOPS
+            <span sort="0">
+              0 IOPS
             </span>
           </td>
           <td class="maxips">
@@ -7649,7 +8103,7 @@
               </span>
           </td>
           <td class="cost-ebs-optimized" data-pricing='{&#34;ap-south-1&#34;: {}, &#34;us-east-1&#34;: {}, &#34;ap-northeast-1&#34;: {}, &#34;ap-southeast-2&#34;: {}, &#34;eu-west-1&#34;: {}, &#34;ap-southeast-1&#34;: {}, &#34;eu-west-2&#34;: {}, &#34;ca-central-1&#34;: {}, &#34;ap-northeast-2&#34;: {}, &#34;us-west-2&#34;: {}, &#34;us-gov-west-1&#34;: {}, &#34;us-west-1&#34;: {}, &#34;eu-central-1&#34;: {}, &#34;sa-east-1&#34;: {}, &#34;us-east-2&#34;: {}}'>
-                <span sort="0">0</span>
+              <span sort="0">N/A</span>
           </td>
         </tr>
         <tr class='instance' id="i3.2xlarge">
@@ -7664,6 +8118,15 @@
               8 vCPUs
             </span>
           </td>
+            
+            <td class="price-per-mem">
+              
+              <span sort="0.232488822653">0.2325</span>
+            </td>
+            <td class="price-per-vcpu">
+              
+              <span sort="1.77272727273">1.773</span>
+            </td>
           <td class="ecu-per-vcpu">
             <span sort="3.375">3.375 units</span>
           </td>
@@ -7691,18 +8154,16 @@
             </span>
           </td>
           <td class="ebs-max-bandwidth">
-            <span sort="1700.0">
-              1700.0 Mbps  <!-- Not MB/s! -->
-            </span>
+            <span sort="0">N/A</span>
           </td>
           <td class="ebs-throughput">
-            <span sort="200.0">
-              200.0 MB/s
+            <span sort="0">
+              0 MB/s
             </span>
           </td>
           <td class="ebs-iops">
-            <span sort="12000.0">
-              12000.0 IOPS
+            <span sort="0">
+              0 IOPS
             </span>
           </td>
           <td class="maxips">
@@ -7764,7 +8225,7 @@
               </span>
           </td>
           <td class="cost-ebs-optimized" data-pricing='{&#34;ap-south-1&#34;: {}, &#34;us-east-1&#34;: {}, &#34;ap-northeast-1&#34;: {}, &#34;ap-southeast-2&#34;: {}, &#34;eu-west-1&#34;: {}, &#34;ap-southeast-1&#34;: {}, &#34;eu-west-2&#34;: {}, &#34;ca-central-1&#34;: {}, &#34;ap-northeast-2&#34;: {}, &#34;us-west-2&#34;: {}, &#34;us-gov-west-1&#34;: {}, &#34;us-west-1&#34;: {}, &#34;eu-central-1&#34;: {}, &#34;sa-east-1&#34;: {}, &#34;us-east-2&#34;: {}}'>
-                <span sort="0">0</span>
+              <span sort="0">N/A</span>
           </td>
         </tr>
         <tr class='instance' id="i3.4xlarge">
@@ -7779,6 +8240,15 @@
               16 vCPUs
             </span>
           </td>
+            
+            <td class="price-per-mem">
+              
+              <span sort="0.232488822653">0.2325</span>
+            </td>
+            <td class="price-per-vcpu">
+              
+              <span sort="1.77272727273">1.773</span>
+            </td>
           <td class="ecu-per-vcpu">
             <span sort="3.3125">3.312 units</span>
           </td>
@@ -7806,18 +8276,16 @@
             </span>
           </td>
           <td class="ebs-max-bandwidth">
-            <span sort="3500.0">
-              3500.0 Mbps  <!-- Not MB/s! -->
-            </span>
+            <span sort="0">N/A</span>
           </td>
           <td class="ebs-throughput">
-            <span sort="400.0">
-              400.0 MB/s
+            <span sort="0">
+              0 MB/s
             </span>
           </td>
           <td class="ebs-iops">
-            <span sort="16000.0">
-              16000.0 IOPS
+            <span sort="0">
+              0 IOPS
             </span>
           </td>
           <td class="maxips">
@@ -7879,7 +8347,7 @@
               </span>
           </td>
           <td class="cost-ebs-optimized" data-pricing='{&#34;ap-south-1&#34;: {}, &#34;us-east-1&#34;: {}, &#34;ap-northeast-1&#34;: {}, &#34;ap-southeast-2&#34;: {}, &#34;eu-west-1&#34;: {}, &#34;ap-southeast-1&#34;: {}, &#34;eu-west-2&#34;: {}, &#34;ca-central-1&#34;: {}, &#34;ap-northeast-2&#34;: {}, &#34;us-west-2&#34;: {}, &#34;us-gov-west-1&#34;: {}, &#34;us-west-1&#34;: {}, &#34;eu-central-1&#34;: {}, &#34;sa-east-1&#34;: {}, &#34;us-east-2&#34;: {}}'>
-                <span sort="0">0</span>
+              <span sort="0">N/A</span>
           </td>
         </tr>
         <tr class='instance' id="i3.8xlarge">
@@ -7894,6 +8362,15 @@
               32 vCPUs
             </span>
           </td>
+            
+            <td class="price-per-mem">
+              
+              <span sort="0.232488822653">0.2325</span>
+            </td>
+            <td class="price-per-vcpu">
+              
+              <span sort="1.77272727273">1.773</span>
+            </td>
           <td class="ecu-per-vcpu">
             <span sort="3.09375">3.094 units</span>
           </td>
@@ -7921,18 +8398,16 @@
             </span>
           </td>
           <td class="ebs-max-bandwidth">
-            <span sort="7000.0">
-              7000.0 Mbps  <!-- Not MB/s! -->
-            </span>
+            <span sort="0">N/A</span>
           </td>
           <td class="ebs-throughput">
-            <span sort="850.0">
-              850.0 MB/s
+            <span sort="0">
+              0 MB/s
             </span>
           </td>
           <td class="ebs-iops">
-            <span sort="32500.0">
-              32500.0 IOPS
+            <span sort="0">
+              0 IOPS
             </span>
           </td>
           <td class="maxips">
@@ -7994,7 +8469,7 @@
               </span>
           </td>
           <td class="cost-ebs-optimized" data-pricing='{&#34;ap-south-1&#34;: {}, &#34;us-east-1&#34;: {}, &#34;ap-northeast-1&#34;: {}, &#34;ap-southeast-2&#34;: {}, &#34;eu-west-1&#34;: {}, &#34;ap-southeast-1&#34;: {}, &#34;eu-west-2&#34;: {}, &#34;ca-central-1&#34;: {}, &#34;ap-northeast-2&#34;: {}, &#34;us-west-2&#34;: {}, &#34;us-gov-west-1&#34;: {}, &#34;us-west-1&#34;: {}, &#34;eu-central-1&#34;: {}, &#34;sa-east-1&#34;: {}, &#34;us-east-2&#34;: {}}'>
-                <span sort="0">0</span>
+              <span sort="0">N/A</span>
           </td>
         </tr>
         <tr class='instance' id="i3.16xlarge">
@@ -8009,6 +8484,15 @@
               64 vCPUs
             </span>
           </td>
+            
+            <td class="price-per-mem">
+              
+              <span sort="0.232488822653">0.2325</span>
+            </td>
+            <td class="price-per-vcpu">
+              
+              <span sort="1.77272727273">1.773</span>
+            </td>
           <td class="ecu-per-vcpu">
             <span sort="3.125">3.125 units</span>
           </td>
@@ -8036,18 +8520,16 @@
             </span>
           </td>
           <td class="ebs-max-bandwidth">
-            <span sort="14000.0">
-              14000.0 Mbps  <!-- Not MB/s! -->
-            </span>
+            <span sort="0">N/A</span>
           </td>
           <td class="ebs-throughput">
-            <span sort="1750.0">
-              1750.0 MB/s
+            <span sort="0">
+              0 MB/s
             </span>
           </td>
           <td class="ebs-iops">
-            <span sort="65000.0">
-              65000.0 IOPS
+            <span sort="0">
+              0 IOPS
             </span>
           </td>
           <td class="maxips">
@@ -8109,7 +8591,7 @@
               </span>
           </td>
           <td class="cost-ebs-optimized" data-pricing='{&#34;ap-south-1&#34;: {}, &#34;us-east-1&#34;: {}, &#34;ap-northeast-1&#34;: {}, &#34;ap-southeast-2&#34;: {}, &#34;eu-west-1&#34;: {}, &#34;ap-southeast-1&#34;: {}, &#34;eu-west-2&#34;: {}, &#34;ca-central-1&#34;: {}, &#34;ap-northeast-2&#34;: {}, &#34;us-west-2&#34;: {}, &#34;us-gov-west-1&#34;: {}, &#34;us-west-1&#34;: {}, &#34;eu-central-1&#34;: {}, &#34;sa-east-1&#34;: {}, &#34;us-east-2&#34;: {}}'>
-                <span sort="0">0</span>
+              <span sort="0">N/A</span>
           </td>
         </tr>
         <tr class='instance' id="d2.xlarge">
@@ -8124,6 +8606,15 @@
               4 vCPUs
             </span>
           </td>
+            
+            <td class="price-per-mem">
+              
+              <span sort="0.514157973174">0.5142</span>
+            </td>
+            <td class="price-per-vcpu">
+              
+              <span sort="3.92045454545">3.92</span>
+            </td>
           <td class="ecu-per-vcpu">
             <span sort="3.5">3.5 units</span>
           </td>
@@ -8151,18 +8642,16 @@
             </span>
           </td>
           <td class="ebs-max-bandwidth">
-            <span sort="750.0">
-              750.0 Mbps  <!-- Not MB/s! -->
-            </span>
+            <span sort="0">N/A</span>
           </td>
           <td class="ebs-throughput">
-            <span sort="93.75">
-              93.75 MB/s
+            <span sort="0">
+              0 MB/s
             </span>
           </td>
           <td class="ebs-iops">
-            <span sort="6000.0">
-              6000.0 IOPS
+            <span sort="0">
+              0 IOPS
             </span>
           </td>
           <td class="maxips">
@@ -8216,9 +8705,7 @@
               <span sort="0">unavailable</span>
           </td>
           <td class="cost-ebs-optimized" data-pricing='{&#34;ap-south-1&#34;: &#34;0.00&#34;, &#34;us-east-1&#34;: &#34;0.00&#34;, &#34;ap-northeast-1&#34;: &#34;0.00&#34;, &#34;ap-southeast-2&#34;: &#34;0.00&#34;, &#34;eu-west-1&#34;: &#34;0.00&#34;, &#34;ap-southeast-1&#34;: &#34;0.00&#34;, &#34;ca-central-1&#34;: &#34;0.00&#34;, &#34;ap-northeast-2&#34;: &#34;0.00&#34;, &#34;us-west-2&#34;: &#34;0.00&#34;, &#34;us-gov-west-1&#34;: {}, &#34;us-west-1&#34;: &#34;0.00&#34;, &#34;eu-central-1&#34;: &#34;0.00&#34;, &#34;us-east-2&#34;: &#34;0.00&#34;, &#34;eu-west-2&#34;: &#34;0.00&#34;}'>
-                <span sort="0.00">
-                  $0.00 hourly
-                </span>
+              <span sort="0">N/A</span>
           </td>
         </tr>
         <tr class='instance' id="d2.2xlarge">
@@ -8233,6 +8720,15 @@
               8 vCPUs
             </span>
           </td>
+            
+            <td class="price-per-mem">
+              
+              <span sort="0.514157973174">0.5142</span>
+            </td>
+            <td class="price-per-vcpu">
+              
+              <span sort="3.92045454545">3.92</span>
+            </td>
           <td class="ecu-per-vcpu">
             <span sort="3.5">3.5 units</span>
           </td>
@@ -8260,18 +8756,16 @@
             </span>
           </td>
           <td class="ebs-max-bandwidth">
-            <span sort="1000.0">
-              1000.0 Mbps  <!-- Not MB/s! -->
-            </span>
+            <span sort="0">N/A</span>
           </td>
           <td class="ebs-throughput">
-            <span sort="125.0">
-              125.0 MB/s
+            <span sort="0">
+              0 MB/s
             </span>
           </td>
           <td class="ebs-iops">
-            <span sort="8000.0">
-              8000.0 IOPS
+            <span sort="0">
+              0 IOPS
             </span>
           </td>
           <td class="maxips">
@@ -8325,9 +8819,7 @@
               <span sort="0">unavailable</span>
           </td>
           <td class="cost-ebs-optimized" data-pricing='{&#34;ap-south-1&#34;: &#34;0.00&#34;, &#34;us-east-1&#34;: &#34;0.00&#34;, &#34;ap-northeast-1&#34;: &#34;0.00&#34;, &#34;ap-southeast-2&#34;: &#34;0.00&#34;, &#34;eu-west-1&#34;: &#34;0.00&#34;, &#34;ap-southeast-1&#34;: &#34;0.00&#34;, &#34;ca-central-1&#34;: &#34;0.00&#34;, &#34;ap-northeast-2&#34;: &#34;0.00&#34;, &#34;us-west-2&#34;: &#34;0.00&#34;, &#34;us-gov-west-1&#34;: {}, &#34;us-west-1&#34;: &#34;0.00&#34;, &#34;eu-central-1&#34;: &#34;0.00&#34;, &#34;us-east-2&#34;: &#34;0.00&#34;, &#34;eu-west-2&#34;: &#34;0.00&#34;}'>
-                <span sort="0.00">
-                  $0.00 hourly
-                </span>
+              <span sort="0">N/A</span>
           </td>
         </tr>
         <tr class='instance' id="d2.4xlarge">
@@ -8342,6 +8834,15 @@
               16 vCPUs
             </span>
           </td>
+            
+            <td class="price-per-mem">
+              
+              <span sort="0.514157973174">0.5142</span>
+            </td>
+            <td class="price-per-vcpu">
+              
+              <span sort="3.92045454545">3.92</span>
+            </td>
           <td class="ecu-per-vcpu">
             <span sort="3.5">3.5 units</span>
           </td>
@@ -8369,18 +8870,16 @@
             </span>
           </td>
           <td class="ebs-max-bandwidth">
-            <span sort="2000.0">
-              2000.0 Mbps  <!-- Not MB/s! -->
-            </span>
+            <span sort="0">N/A</span>
           </td>
           <td class="ebs-throughput">
-            <span sort="250.0">
-              250.0 MB/s
+            <span sort="0">
+              0 MB/s
             </span>
           </td>
           <td class="ebs-iops">
-            <span sort="16000.0">
-              16000.0 IOPS
+            <span sort="0">
+              0 IOPS
             </span>
           </td>
           <td class="maxips">
@@ -8434,9 +8933,7 @@
               <span sort="0">unavailable</span>
           </td>
           <td class="cost-ebs-optimized" data-pricing='{&#34;ap-south-1&#34;: &#34;0.00&#34;, &#34;us-east-1&#34;: &#34;0.00&#34;, &#34;ap-northeast-1&#34;: &#34;0.00&#34;, &#34;ap-southeast-2&#34;: &#34;0.00&#34;, &#34;eu-west-1&#34;: &#34;0.00&#34;, &#34;ap-southeast-1&#34;: &#34;0.00&#34;, &#34;ca-central-1&#34;: &#34;0.00&#34;, &#34;ap-northeast-2&#34;: &#34;0.00&#34;, &#34;us-west-2&#34;: &#34;0.00&#34;, &#34;us-gov-west-1&#34;: {}, &#34;us-west-1&#34;: &#34;0.00&#34;, &#34;eu-central-1&#34;: &#34;0.00&#34;, &#34;us-east-2&#34;: &#34;0.00&#34;, &#34;eu-west-2&#34;: &#34;0.00&#34;}'>
-                <span sort="0.00">
-                  $0.00 hourly
-                </span>
+              <span sort="0">N/A</span>
           </td>
         </tr>
         <tr class='instance' id="d2.8xlarge">
@@ -8451,6 +8948,15 @@
               36 vCPUs
             </span>
           </td>
+            
+            <td class="price-per-mem">
+              
+              <span sort="0.514157973174">0.5142</span>
+            </td>
+            <td class="price-per-vcpu">
+              
+              <span sort="3.48484848485">3.485</span>
+            </td>
           <td class="ecu-per-vcpu">
             <span sort="3.22222222222">3.222 units</span>
           </td>
@@ -8478,18 +8984,16 @@
             </span>
           </td>
           <td class="ebs-max-bandwidth">
-            <span sort="4000.0">
-              4000.0 Mbps  <!-- Not MB/s! -->
-            </span>
+            <span sort="0">N/A</span>
           </td>
           <td class="ebs-throughput">
-            <span sort="500.0">
-              500.0 MB/s
+            <span sort="0">
+              0 MB/s
             </span>
           </td>
           <td class="ebs-iops">
-            <span sort="32000.0">
-              32000.0 IOPS
+            <span sort="0">
+              0 IOPS
             </span>
           </td>
           <td class="maxips">
@@ -8543,9 +9047,7 @@
               <span sort="0">unavailable</span>
           </td>
           <td class="cost-ebs-optimized" data-pricing='{&#34;ap-south-1&#34;: &#34;0.00&#34;, &#34;us-east-1&#34;: &#34;0.00&#34;, &#34;ap-northeast-1&#34;: &#34;0.00&#34;, &#34;ap-southeast-2&#34;: &#34;0.00&#34;, &#34;eu-west-1&#34;: &#34;0.00&#34;, &#34;ap-southeast-1&#34;: &#34;0.00&#34;, &#34;ca-central-1&#34;: &#34;0.00&#34;, &#34;ap-northeast-2&#34;: &#34;0.00&#34;, &#34;us-west-2&#34;: &#34;0.00&#34;, &#34;us-gov-west-1&#34;: {}, &#34;us-west-1&#34;: &#34;0.00&#34;, &#34;eu-central-1&#34;: &#34;0.00&#34;, &#34;us-east-2&#34;: &#34;0.00&#34;, &#34;eu-west-2&#34;: &#34;0.00&#34;}'>
-                <span sort="0.00">
-                  $0.00 hourly
-                </span>
+              <span sort="0">N/A</span>
           </td>
         </tr>
         <tr class='instance' id="f1.2xlarge">
@@ -8560,6 +9062,8 @@
               8 vCPUs
             </span>
           </td>
+            <td class="price-per-mem"> <span sort="0">Unknown</span> </td>
+            <td class="price-per-vcpu"> <span sort="0">Unknown</span> </td>
           <td class="ecu-per-vcpu">
             <span sort="0">0 units</span>
           </td>
@@ -8653,6 +9157,8 @@
               64 vCPUs
             </span>
           </td>
+            <td class="price-per-mem"> <span sort="0">Unknown</span> </td>
+            <td class="price-per-vcpu"> <span sort="0">Unknown</span> </td>
           <td class="ecu-per-vcpu">
             <span sort="0">0 units</span>
           </td>
@@ -8749,7 +9255,7 @@
       </p>
       <p>
         <strong>How?</strong>
-        Data is scraped from multiple pages on the AWS site. This was last done at 2017-03-10 15:45:20 UTC.
+        Data is scraped from multiple pages on the AWS site. This was last done at 2017-03-15 08:53:31 UTC.
       </p>
 
       <p class="bg-warning">
