@@ -17,6 +17,8 @@ class Instance(object):
         self.vpc = None
         self.arch = ['x86_64']
         self.ECU = 0
+        self.initial_credits = None
+        self.credits_per_day = None
         self.base_performance = None
         self.burst_minutes = None
         self.linux_virtualization_types = []
@@ -44,6 +46,8 @@ class Instance(object):
                  arch=self.arch,
                  vCPU=self.vCPU,
                  ECU=self.ECU,
+                 initial_credits=self.initial_credits,
+                 credits_per_day=self.credits_per_day,
                  base_performance=self.base_performance,
                  burst_minutes=self.burst_minutes,
                  memory=self.memory,
@@ -504,9 +508,10 @@ def add_t2_credits(instances):
 
     for r in rows:
         inst = by_type[totext(r[0])]
-        creds_per_hour = locale.atof(totext(r[2]))
-        inst.base_performance = creds_per_hour / 60
-        inst.burst_minutes = creds_per_hour * 24 / inst.vCPU
+        inst.initial_credits = locale.atof(totext(r[1]))
+        inst.credits_per_day = locale.atof(totext(r[5]))
+        inst.base_performance = inst.credits_per_day / (24 * 60)
+        inst.burst_minutes = inst.credits_per_day / inst.vCPU
 
 
 def add_pretty_names(instances):
